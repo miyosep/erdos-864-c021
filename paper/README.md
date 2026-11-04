@@ -14,5 +14,5 @@ To build, run `tectonic --untrusted main.tex` here. The bibliography is
 embedded; there are no supporting image or bibliography files. See
 [REPRODUCING.md](../REPRODUCING.md) for requirements and finite checks.
 
-[Review materials](../review/README.md) and [historical drafts](../HISTORY.md)
-are kept separately from the paper.
+[Review materials](../review/README.md) describe the proof checkpoints,
+finite checks and verification limitations.

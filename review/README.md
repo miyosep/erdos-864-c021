@@ -7,7 +7,6 @@ explain what was checked, with which evidence, and what remains unsettled.
 | --- | --- |
 | [Gap and literature audit](GAP_AUDIT.md) | Detailed algebra, uniformity, reflection/deletion arguments and primary-source comparisons |
 | [Computational supplement](COMPUTATIONAL_SUPPLEMENT.md) | Exact finite scopes, code, execution provenance and review limitations |
-| [Repository review](REPOSITORY_REVIEW.md) | Reader-facing structure, reproducibility repairs and their validation |
 
 Useful proof checkpoints in the paper are Lemma 2.2 (the entire exceptional
 complement, including at most $2p$ singular witnesses), Lemma 2.3 (independent
@@ -19,6 +18,5 @@ The recorded review is same-model/self-checking, with separate finite
 implementations. It is not established independent expert review or formal
 verification. Internal proof labels and finite passes are not premises.
 Literature priority has not been established, and no resolution of the
-general Erdős #864 problem is claimed. The paper's author/presentation
-revision did not change that status. See the supplement for finite scopes
-and historical references.
+general Erdős #864 problem is claimed. See the supplement for finite scopes
+and verification limitations.

@@ -47,12 +47,16 @@ for record in finite['fresh_finite_runs']:
     check(path.is_file() and digest(path) == record['sha256'], 'recorded '+record['mode'])
     data = json.loads(path.read_text(encoding='utf-8'))
     check(data['status']=='PASS' and not data['truncated'], 'completed '+record['mode'])
-documents = [root/'README.md', root/'REPRODUCING.md', root/'HISTORY.md', root/'evidence/README.md']
+check(not (root/'HISTORY.md').exists(), 'current-only navigation')
+documents = [root/'README.md', root/'REPRODUCING.md', root/'evidence/README.md']
 for directory in ['paper','review','code']:
     documents.extend((root/directory).glob('*.md'))
 links = 0
 for document in documents:
-    for link in re.findall(r'\]\(([^)]+)\)', document.read_text(encoding='utf-8')):
+    content = document.read_text(encoding='utf-8')
+    check('HISTORY.md' not in content and 'historical drafts' not in content.lower()
+          and 'REPOSITORY_REVIEW.md' not in content, 'current-only reader guide '+document.name)
+    for link in re.findall(r'\]\(([^)]+)\)', content):
         if re.match(r'https?://|#', link):
             continue
         path = (document.parent/link.split('#')[0]).resolve()

@@ -1,9 +1,8 @@
 # Mathematical and literature gap audit
 
-This is a reader-facing extraction of the earlier same-model audit, not a
-new independent review. Mathematical checkpoints and primary-source
-comparison limitations are retained; session bookkeeping and superseded
-draft descriptions are kept in [Git history](../HISTORY.md).
+This same-model audit describes mathematical checkpoints and primary-source
+comparison limitations. It does not constitute independent expert review
+or formal verification.
 See the [current paper](../paper/main.pdf) and
 [computational supplement](COMPUTATIONAL_SUPPLEMENT.md).
 
@@ -103,7 +102,6 @@ This is a bounded comparison, not proof that no earlier derivation exists.
 | Forey–Fresán–Kowalski, arXiv:2301.12878v3, introduction/Remark 2, §3 pp.4–6, §5 pp.9–10 | Symmetric Sidon terminology, algebraic realization of Bose sets, exponential-sum equidistribution discussion. | Confirms the symmetry framework and classical algebraic setting are prior. Its discussed exponential sums vary over character parameters; no exact positive-integer-lift theorem was extracted. Referenced broader monograph was not audited. |
 | Yuchen Ding, arXiv:2606.15041v2, Theorems 1 and 4, §2.1 | Weighted distribution on arithmetic progressions. | One-coordinate distribution, not a prescribed four-coordinate local count. The current v2 title is Dense finite Sidon sets on arithmetic progressions, differing from the v1 title in search summaries. |
 
-The original access records are retained in the historical review packet linked from HISTORY.md.
 Only these selected passages were checked; no full-paper correctness review
 of all seven sources is claimed. The external bound actually used is
 [Keating–Rudnick](https://arxiv.org/pdf/1204.0708v3); the directly relevant

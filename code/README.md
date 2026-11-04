@@ -10,10 +10,7 @@ repository root; see [REPRODUCING.md](../REPRODUCING.md) for commands.
 | [check_repository.py](check_repository.py) | Links, checksums, source equations and recorded-output integrity |
 | [limits.py](limits.py) | Fresh output directories and fixed cooperative resource limits |
 
-The two mathematical scripts derive from the separately implemented
-historical verifiers. Their mathematical test bodies are retained; standalone
-argument handling, output creation, deadline checks and nonzero limit exits
-were added for this public repository. Original code and exact run snapshots
-remain accessible through [HISTORY.md](../HISTORY.md); the current
-[finite evidence](../evidence/README.md) remains in this checkout.
-This adaptation is not an independent mathematical review.
+The two mathematical scripts use different field models and share bounded
+output/resource handling. The [finite evidence](../evidence/README.md) records
+the executed scopes, outputs and provenance. Separately implemented code does
+not constitute independent mathematical review.

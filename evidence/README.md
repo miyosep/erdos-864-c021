@@ -1,7 +1,6 @@
 # Finite evidence and source integrity
 
-This directory keeps evidence needed to inspect or reproduce the current
-code. Historical bulk is accessible through [HISTORY.md](../HISTORY.md).
+This directory keeps evidence needed to inspect or reproduce the current code.
 
 | File | Purpose |
 | --- | --- |
@@ -12,9 +11,7 @@ code. Historical bulk is accessible through [HISTORY.md](../HISTORY.md).
 
 [REPRODUCING.md](../REPRODUCING.md) gives commands and interpretation.
 The [supplement](../review/COMPUTATIONAL_SUPPLEMENT.md) states the ranges and
-limitations. Running code needs no historical checkout or private workspace.
-Old receipts identify earlier byte versions and paths; they remain at the
-pinned commit rather than being edited to resemble current executions.
+limitations. The included code and results suffice for the documented checks.
 
 The root [SHA256SUMS.txt](../SHA256SUMS.txt) is the current distribution
 manifest. Baseline hashes check source preservation, not mathematics.

@@ -16,7 +16,7 @@ construction family is $(3+o(1))p^2$, also after $o(p)$ base deletions.
 
 Start with the PDF for the complete argument. To check its critical steps,
 continue with the review guide; to run the finite tests, use the reproduction
-guide. The early separated-reflection note is historical material.
+guide.
 
 | Your goal | Start here |
 | --- | --- |
@@ -24,7 +24,6 @@ guide. The early separated-reflection note is historical material.
 | Examine proof obligations and review limitations | [review/](review/README.md) |
 | Reproduce finite checks | [REPRODUCING.md](REPRODUCING.md) |
 | Inspect outputs and execution provenance | [evidence/](evidence/README.md) |
-| Consult earlier drafts and the original C021 packet | [HISTORY.md](HISTORY.md) |
 
 The results concern the stated quadratic construction family and its
 sublinear deletions. They do not resolve the general Erdős #864 upper-bound

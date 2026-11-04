@@ -22,7 +22,7 @@ python code/check_singular_fibres.py
 
 This uses the alternate field model $X^2-X-d$ and checks all primitive
 elements and modular targets for $p=3,5,7$, the three stated cuts, integer
-carry selection and fixed-grid geometry. Exact scope and historical counts
+carry selection and fixed-grid geometry. Exact scope and recorded counts
 are in the [computational supplement](review/COMPUTATIONAL_SUPPLEMENT.md).
 The new output is `results/singular-fibres/outputs/singular_uniform.json`.
 
