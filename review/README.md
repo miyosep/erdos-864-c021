@@ -6,7 +6,7 @@ explain what was checked, with which evidence, and what remains unsettled.
 | Material | Purpose |
 | --- | --- |
 | [Gap and literature audit](GAP_AUDIT.md) | Detailed algebra, uniformity, reflection/deletion arguments and primary-source comparisons |
-| [Computational supplement](COMPUTATIONAL_SUPPLEMENT.md) | Exact finite scopes, code, receipts and review limitations |
+| [Computational supplement](COMPUTATIONAL_SUPPLEMENT.md) | Exact finite scopes, code, execution provenance and review limitations |
 | [Repository review](REPOSITORY_REVIEW.md) | Reader-facing structure, reproducibility repairs and their validation |
 
 Useful proof checkpoints in the paper are Lemma 2.2 (the entire exceptional
@@ -20,5 +20,5 @@ implementations. It is not established independent expert review or formal
 verification. Internal proof labels and finite passes are not premises.
 Literature priority has not been established, and no resolution of the
 general Erdős #864 problem is claimed. The paper's author/presentation
-revision did not change that status. See the supplement for the full
-verification history.
+revision did not change that status. See the supplement for finite scopes
+and historical references.

@@ -10,8 +10,8 @@ package installation or unbundled research runner is needed.
 python code/check_repository.py
 ```
 
-This checks current local links, distribution checksums, preserved historical
-bytes, author metadata in the TeX source, all 51 displayed expressions and
+This checks current local links, distribution checksums, recorded finite
+outputs, author metadata in the TeX source, all 51 displayed expressions and
 equation labels (1)–(28). It does not verify the mathematical proofs.
 
 ## Check singular fibres and integer lifts
@@ -45,7 +45,7 @@ python code/check_extensions.py crt_lifts
 | `crt_lifts` | CRT preimages and exact carry boundaries | All primitives, targets and cuts for $p=3,5$ |
 
 Detailed qualifications, including floating arithmetic used in the small
-character-sum checks, are in the [historical finite-suite guide](archive/workspace/tests/C021_EXTENSIONS_TESTS.md).
+character-sum checks, are in the [computational supplement](review/COMPUTATIONAL_SUPPLEMENT.md).
 New outputs go to `results/<mode>/outputs/<mode>.json`.
 
 Each command uses one worker, at most 2,000,000 declared state visits,

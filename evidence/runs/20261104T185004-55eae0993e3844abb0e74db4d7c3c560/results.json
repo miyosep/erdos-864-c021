@@ -1,8 +1,0 @@
-{
-  "completion_status": "COMPLETED",
-  "exit_code": 0,
-  "stdout": "stdout.txt",
-  "stderr": "stderr.txt",
-  "artifact_directory": "outputs",
-  "error": null
-}

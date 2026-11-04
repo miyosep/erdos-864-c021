@@ -1,1 +1,0 @@
-{"part": "crt_lifts", "seed": null, "independent_of_historical_code": true, "formal_or_independent_reviewer": false, "status": "PASS", "truncated": false, "states": 767346, "periods": 4864, "workers": 1, "limits": {"states": 2000000, "periods": 1000000, "workers": 1}}

@@ -1,36 +1,21 @@
-# Evidence and provenance
+# Finite evidence and source integrity
 
-This directory holds exact finite outputs and receipts. Read the
-[computational supplement](../review/COMPUTATIONAL_SUPPLEMENT.md) for their
-meaning and limitations, and [REPRODUCING.md](../REPRODUCING.md) to run checks.
+This directory keeps evidence needed to inspect or reproduce the current
+code. Historical bulk is accessible through [HISTORY.md](../HISTORY.md).
 
-| Historical check | Recorded output |
+| File | Purpose |
 | --- | --- |
-| Parametrization and exceptions | [audit.json](runs/20261104T175510-6afeb6b3f17842be9d99641ed0124910/outputs/audit.json) |
-| Integer-count profiles | [limits.json](runs/20261104T175733-c6d3cbeb565d409893af79af248dcf8a/outputs/limits.json) |
-| All-height reflection | [reflection.json](runs/20261104T175850-be97a2607144487cafb7d168e3dadbdc/outputs/reflection.json) |
-| Deletion loss | [deletions.json](runs/20261104T175904-d73cf14c34d84b19a449bb061ff15d13/outputs/deletions.json) |
-| CRT and carry boundaries | [crt_lifts.json](runs/20261104T180322-796e9a7a704040da87b2c1dbe1b4775d/outputs/crt_lifts.json) |
-| Alternate-field singular fibres | [singular_uniform.json](runs/20261104T181514-4b2df1bfafdd4ddaa11e3afe0f6d3c8c/outputs/singular_uniform.json) |
-| Earlier document integrity | [document_checks.json](runs/20261104T185004-55eae0993e3844abb0e74db4d7c3c560/outputs/document_checks.json) |
+| [FINITE_CHECKS.json](FINITE_CHECKS.json) | Six actual runs, scope counters, runtime, output hashes and code-comparison provenance |
+| [results/](results/) | Complete outputs for singular fibres, algebra, profiles, reflections, deletions and CRT/lifts |
+| [BUILD.json](BUILD.json) | Paper/code hashes, compiler and visual-review record |
+| [EQUATION_BASELINE.json](EQUATION_BASELINE.json) | Frozen hashes of 51 displays, with immutable source commit and path |
 
-Each linked output has a neighbouring receipt and exact code/input snapshots
-in its run directory. These are selected historical successful runs; some
-superseded runs mentioned in archived guides are not distributed here.
-Original user-home paths were redacted before publication; historical receipt
-hash fields still identify the original local bytes. Earlier export manifests
-are preserved under [archive/workspace/](../archive/workspace/README.md).
+[REPRODUCING.md](../REPRODUCING.md) gives commands and interpretation.
+The [supplement](../review/COMPUTATIONAL_SUPPLEMENT.md) states the ranges and
+limitations. Running code needs no historical checkout or private workspace.
+Old receipts identify earlier byte versions and paths; they remain at the
+pinned commit rather than being edited to resemble current executions.
 
-[RELOCATION.json](RELOCATION.json) maps every file from the preceding public
-commit to its byte-preserved location. Frozen receipts and snapshots retain
-their historical paths; consult this map rather than editing those records.
-The current distribution has one checksum manifest at the repository root.
-Hashes check file integrity, not mathematical correctness.
-
-The standalone public-code adaptation was checked again during the
-reorganization. [RESTRUCTURE_VALIDATION.json](RESTRUCTURE_VALIDATION.json)
-records six fresh finite-suite executions, unchanged mathematical-function
-comparisons and PDF checks. Their outputs are in
-[restructure-2026-11-05/](restructure-2026-11-05/); [BUILD.json](BUILD.json)
-records current paper and code hashes. These are separate from the historical
-runs above and do not expand their mathematical scope.
+The root [SHA256SUMS.txt](../SHA256SUMS.txt) is the current distribution
+manifest. Baseline hashes check source preservation, not mathematics.
+No independent or formal verification is asserted by these files.

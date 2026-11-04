@@ -23,8 +23,8 @@ guide. The early separated-reflection note is historical material.
 | Read or build the current paper | [paper/](paper/README.md) |
 | Examine proof obligations and review limitations | [review/](review/README.md) |
 | Reproduce finite checks | [REPRODUCING.md](REPRODUCING.md) |
-| Inspect exact outputs, receipts and provenance | [evidence/](evidence/README.md) |
-| Consult earlier drafts and the original C021 packet | [archive/](archive/README.md) |
+| Inspect outputs and execution provenance | [evidence/](evidence/README.md) |
+| Consult earlier drafts and the original C021 packet | [HISTORY.md](HISTORY.md) |
 
 The results concern the stated quadratic construction family and its
 sublinear deletions. They do not resolve the general Erdős #864 upper-bound

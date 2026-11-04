@@ -1,71 +1,53 @@
-# Computational supplement and verification record
+# Computational supplement
 
-This supplement belongs to the external-review draft
-[Uniform integer representation counts and reflected spans for quadratic
-Bose–Chowla sets](../paper/main.md).
-No numerical result is a premise of its proofs.
+This accompanies the [current paper](../paper/main.pdf). No experimental
+result is a premise of its proofs. [REPRODUCING.md](../REPRODUCING.md)
+gives commands; [FINITE_CHECKS.json](../evidence/FINITE_CHECKS.json) records
+executions and [evidence/results](../evidence/results/) holds complete outputs.
 
-## Verification status
+## Review status
 
-The project records C054–C059 as PROVED / SELF_CHECKED with novelty
-NOT_CHECKED. These are internal research-management labels, not independent
-refereeing or formal proof certification. The mathematical argument and the
-precisely stated external character theorem must be checked directly.
-The manuscript was prepared with AI assistance; no independent expert
-review or formal verification has been established by these records.
+The argument review is same-model/self-checking. AI assistance and separately
+implemented finite tests do not establish independent expert review or formal
+verification. Internal proof labels are not premises. Novelty and the general
+Erdős #864 upper bound are not established. Original review history remains
+accessible through [HISTORY.md](../HISTORY.md).
 
-## Locally executed checks
+## Exact finite scopes
 
-The first independently written implementation of the field formulas used
-F_p[X]/(X²−d); an alternate verifier used F_p[X]/(X²−X−d) and imported
-no historical research code. Both were written in the same model context,
-so implementation independence does not imply an independent reviewer.
+| Check | Scope and qualifications |
+| --- | --- |
+| Alternate-field singular fibres | In $F_p[X]/(X^2-X-d)$, all primitives and all modular targets for $p=3,5,7$; cuts $0,lfloor M/3
+floor,M-1$; all possible integer lifts and rational fixed-grid geometry. 992 primitive/target cases, 452448 selectors, 775680 states, 4211 periods. Singular maxima $6,10,14$; omitted maxima $13,27,39$. |
+| `audit` | All primitives and targets for $p=3,5$; first specified primitive and all targets for $p=7$; 272 targets. Modular first-three-coordinate enumeration, parametrization, exceptions and row sums; all row modes for $ple5$, three specified modes for $p=7$. |
+| `limits` | First primitive in the least-nonresidue field for $p=3,5,7,11,17,23,31$; cuts $0,lfloor M/3
+floor,M-1$; 21 distributions, all integer $sin[-M,3M]$. Rational profile and exact counts, direct quadruples for $ple5$. |
+| `reflection` | All 224 primitive/cut bases for $p=3,5$, every height in the mathematically sufficient finite optimization interval, direct diagonal-sensitive admissibility. |
+| `deletions` | All 56 nonempty Sidon subsets of $[1,7]$, every deletion and relevant sum; 5586 sum/deletion checks. |
+| `crt_lifts` | All primitives, targets and cuts for $p=3,5$; exact degree-less-than-five CRT preimages for 584 retained rows; 122592 modular-witness/cut checks, including 10648 zero/one boundary cases. |
 
-The alternate verifier tests every primitive element and every modular
-target for p=3,5,7, selected translations 0,floor(M/3),M−1, every possible
-integer lift, and rational fixed-grid boundary geometry. The successful
-final run checked 992 primitive/target cases and 452448 witness/cut/lift
-selectors. Singular maxima were 2p; omitted maxima were 13,27,39.
-There were 775680 declared state visits, 4211 periods, one worker and
-no truncation. These numbers describe only that finite computation.
+All six recorded public-code runs completed with `PASS`, one worker and no
+truncation under the fixed caps. Small character-sum checks use floating
+complex arithmetic with tolerance $10^{-9}$, not certified interval arithmetic.
+Finite counts do not prove asymptotics, relative boundary error, a prime
+threshold, the external character estimate or priority.
 
-Exact final run and code:
+## Provenance
 
-* [Alternate-field output](../evidence/runs/20261104T181514-4b2df1bfafdd4ddaa11e3afe0f6d3c8c/outputs/singular_uniform.json)
-* [Receipt](../evidence/runs/20261104T181514-4b2df1bfafdd4ddaa11e3afe0f6d3c8c/receipt.json)
-* [Verifier](../code/check_singular_fibres.py)
-* [Reproduction and full scope](../REPRODUCING.md)
+The original mathematical implementations used different field models; both
+were written in the same model context. The public adaptation adds standalone
+arguments, fresh outputs, bounded resource handling and nonzero limit exits.
+Mathematical-function comparisons with the original code were recorded before
+archival pruning. Their exact immutable snapshot is linked in the finite-check
+provenance. Inherited implementation-independence flags refer to the original
+implementation history, not to a new independent reviewer.
 
-Earlier checks include direct integer histograms, small quadruple
-enumeration, all small primitive/cut reflected unions, every deletion of
-small Sidon subsets, and explicit CRT preimages. Their distinct scopes,
-actual receipts and superseded checker revisions are retained in the
-[original extension test guide](../archive/workspace/tests/C021_EXTENSIONS_TESTS.md).
-They are not merged into a misleading single search bound or total.
+This checkout retains code, six complete outputs, execution details and hashes.
+Older receipts, code/input snapshots, failures and manifests remain in Git
+history. They were not rewritten as new successful checks or silently combined
+with fresh results. Unexamined feedback-reported tests are not adopted evidence.
 
-## Feedback-reported tests not adopted as verified evidence
-
-The user supplied a review reporting 1568 modular fibres and 520576
-integer selectors, including some p=11,13 choices, and a ZIP link from
-an external sandbox. This session has not read or executed that artifact.
-Those figures are recorded as feedback reports only. They are not added
-to the locally executed totals, described as reproduced, or treated as
-independent mathematical verification. No code was imported from the
-unexamined ZIP and no licensing assumption was made for it.
-
-## Detailed audit and document checks
-
-The [full mathematical and literature audit](GAP_AUDIT.md)
-records the singular-fibre, CRT, fixed-grid and integer-carry arguments,
-source access levels and independent-review limitations. The
-[editorial change record](../archive/workspace/notes/c021_editorial_20261105/REVISION_REVIEW.md) distinguishes the present
-expository revision from new mathematical work. Historical receipts and
-original code/input/output hashes are preserved.
-
-Document-integrity checks validate equation source, numbering, grouping,
-references and section order. Workspace tests validate infrastructure.
-Neither validates the mathematics. No finite table proves the uniform
-asymptotic theorem, the external character estimate, a prime threshold,
-literature priority or the general Erdős #864 conjecture.
-
-Current standalone commands and result interpretation are in [REPRODUCING.md](../REPRODUCING.md). The relocated code adds bounded standalone command-line setup; the original mathematical test bodies and historical snapshots are retained.
+The [gap audit](GAP_AUDIT.md) retains substantive algebra and literature
+comparisons. Repository checks establish source/link/file integrity, not
+mathematical correctness. Neither finite success nor old labels replace
+checking the proof and its stated external character estimate.

@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "states": 17,
+  "periods": 0,
+  "workers": 1,
+  "truncated": false,
+  "mathematical_functions": [
+    {
+      "original": "archive/workspace/verifiers/review_c021_singular_uniform.py",
+      "current": "code/check_singular_fibres.py",
+      "equal_functions": [
+        "check_prime",
+        "geometry"
+      ],
+      "excluded": "main, tick and period (CLI/budget handling)",
+      "original_url": "https://github.com/miyosep/erdos-864-c021/blob/eca15a265f77e8fd875d4559bbbd0e21582c8405/archive/workspace/verifiers/review_c021_singular_uniform.py"
+    },
+    {
+      "original": "archive/workspace/experiments/check_c021_extensions.py",
+      "current": "code/check_extensions.py",
+      "equal_functions": [
+        "Budget.__init__",
+        "Field.__init__",
+        "Field.add",
+        "Field.bar",
+        "Field.div",
+        "Field.mul",
+        "Field.neg",
+        "Field.primitives",
+        "Field.sub",
+        "Field.table",
+        "admissible",
+        "audit",
+        "crt_lifts",
+        "deletions",
+        "direct_hist",
+        "hist",
+        "limits",
+        "profile",
+        "reflection"
+      ],
+      "excluded": "main, tick and period (CLI/budget handling)",
+      "original_url": "https://github.com/miyosep/erdos-864-c021/blob/eca15a265f77e8fd875d4559bbbd0e21582c8405/archive/workspace/experiments/check_c021_extensions.py"
+    }
+  ],
+  "fresh_finite_runs": [
+    {
+      "mode": "singular_uniform",
+      "workspace_run_id": "20261104T192522-6c21ec9dacce4d038b172e54d98b6218",
+      "exit_code": 0,
+      "elapsed_seconds": 0.5509847000939772,
+      "states": 775680,
+      "periods": 4211,
+      "public_output": "evidence/results/singular_uniform.json",
+      "sha256": "438ee18f9268bacb00a4a36379cddf75edff52a07142fdb65b8711342f87f347"
+    },
+    {
+      "mode": "audit",
+      "workspace_run_id": "20261104T192537-26b490e915554192a19dc7ee3f91c471",
+      "exit_code": 0,
+      "elapsed_seconds": 1.6025295000290498,
+      "states": 1345551,
+      "periods": 272,
+      "public_output": "evidence/results/audit.json",
+      "sha256": "27ecfc7d27706581d29466a6ea29a7621b56874ecd614cdccc67a9492882cce0"
+    },
+    {
+      "mode": "limits",
+      "workspace_run_id": "20261104T192539-816dfd473d284eeb9faadfe4177be821",
+      "exit_code": 0,
+      "elapsed_seconds": 1.241098599974066,
+      "states": 462653,
+      "periods": 21,
+      "public_output": "evidence/results/limits.json",
+      "sha256": "b83158d938fa532020aa7598c304c051c444d80a206080efe666fc9914af7567"
+    },
+    {
+      "mode": "reflection",
+      "workspace_run_id": "20261104T192540-a13c42fe950043b9b0803e038483a40e",
+      "exit_code": 0,
+      "elapsed_seconds": 0.4532352000242099,
+      "states": 750850,
+      "periods": 224,
+      "public_output": "evidence/results/reflection.json",
+      "sha256": "b2c47bbba001daf21a069c8b173a5511f27af579fdb824086e68f200bf80d9bb"
+    },
+    {
+      "mode": "deletions",
+      "workspace_run_id": "20261104T192541-85e82da11f2e45e4a99d691feec756c5",
+      "exit_code": 0,
+      "elapsed_seconds": 0.18964869994670153,
+      "states": 51919,
+      "periods": 338,
+      "public_output": "evidence/results/deletions.json",
+      "sha256": "aebfe9ea5e9783e73e7d8cfb2c1504d9f4829518b6c1332d99c4da0e2263a3f4"
+    },
+    {
+      "mode": "crt_lifts",
+      "workspace_run_id": "20261104T192542-b508c383bc974fa9bbb649eff047044c",
+      "exit_code": 0,
+      "elapsed_seconds": 0.46589039999525994,
+      "states": 767346,
+      "periods": 4864,
+      "public_output": "evidence/results/crt_lifts.json",
+      "sha256": "3361a96194b7184e0671bad9e404ea58da01029448f0dfa29eb0494d14db60f1"
+    }
+  ],
+  "pdf_pages": 11,
+  "equation_tags": 28,
+  "pdf_author": "Sage Kim",
+  "affiliation": "Peking University",
+  "new_pdf_supplement_link_checked": true,
+  "mathematical_correctness_verified": false,
+  "comparison_snapshot_commit": "eca15a265f77e8fd875d4559bbbd0e21582c8405"
+}

@@ -1,1 +1,0 @@
-{"seed": null, "workers": 1, "independent_implementation_of_historical_code": true, "independent_reviewer_or_formal_proof": false, "note": "Finite checks do not verify the asymptotic limit or external character theorem.", "status": "PASS", "truncated": false, "states": 775680, "periods": 4211, "limits": {"states": 2000000, "periods": 1000000, "workers": 1}}
