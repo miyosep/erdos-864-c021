@@ -89,5 +89,4 @@ original local files; changed public copies and original/public hashes are
 identified in the export manifest. Third-party PDFs and external code are not
 included. The original local research records are preserved.
 
-Prepared for public review on 5 November 2026 (Asia/Shanghai). Publication does
-not change the mathematical review or novelty status.
+Publication does not change the mathematical review or novelty status.

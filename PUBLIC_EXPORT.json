@@ -13,12 +13,12 @@
     {
       "path": "C021_REVIEW_NOTE.md",
       "original_sha256": "bd9228728cbeec1bf0531b7df1c4d76903a51d0343319a801b8a5f9566645798",
-      "public_sha256": "81a0a3571cbae941c1f559afac9a67fe35d1cf350f9c9f4c15b753b5894b5947"
+      "public_sha256": "6022d0c32a8927a132b8e4cba2b03160c59b11950d36b918fe4e95ebc3cc7cb3"
     },
     {
       "path": "C021_REVIEW_NOTE.txt",
       "original_sha256": "bd9228728cbeec1bf0531b7df1c4d76903a51d0343319a801b8a5f9566645798",
-      "public_sha256": "81a0a3571cbae941c1f559afac9a67fe35d1cf350f9c9f4c15b753b5894b5947"
+      "public_sha256": "6022d0c32a8927a132b8e4cba2b03160c59b11950d36b918fe4e95ebc3cc7cb3"
     },
     {
       "path": "README.txt",
@@ -57,5 +57,14 @@
     }
   ],
   "historical_receipt_hashes": "Refer to original local bytes; not relabeled as public-copy hashes",
-  "original_records_modified": false
+  "original_records_modified": false,
+  "display_revision": {
+    "purpose": "GitHub math compatibility and remove decorative preparation date/timezone",
+    "previous_note_sha256": "81a0a3571cbae941c1f559afac9a67fe35d1cf350f9c9f4c15b753b5894b5947",
+    "current_note_sha256": "6022d0c32a8927a132b8e4cba2b03160c59b11950d36b918fe4e95ebc3cc7cb3",
+    "math_fences": 20,
+    "blocked_operatorname_macro_removed": true,
+    "historical_receipt_timestamps_preserved": true,
+    "mathematical_claim_or_review_status_changed": false
+  }
 }
