@@ -247,10 +247,10 @@ The evaluation points are theta, -w, -r; in particular evaluating
 T+b produces b+theta, b-w, b-r with the displayed signs.
 
 On the three residue fields put the local characters chi^j, chi^h,
-and chi^(-h) restricted to F_p^*. The Chinese remainder theorem
+and chi^(-h) restricted to `F_p^*`. The Chinese remainder theorem
 constructs their product Dirichlet character Xi modulo Q, extended by
 zero at nonunits. If (j,h)!=(0,0) modulo M, at least one QUADRATIC
-component is nonprincipal on its full field K^*. CRT allows that
+component is nonprincipal on its full field `K^*`. CRT allows that
 component to vary independently, so Xi is nonprincipal. A trivial
 linear component still omits b=r correctly. No primitivity assertion
 for Xi is required.

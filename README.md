@@ -11,7 +11,7 @@ stored internal `PROVED` label is not an independent correctness certificate.
 
 - [Standalone proof note](C021_REVIEW_NOTE.md), including all elementary premises.
 - [Editable LaTeX source](C021_REVIEW_NOTE_SOURCE.txt).
-- [Original C021 proof](proofs/bose_integer_carries.md).
+- [C021 proof (display-safe copy)](proofs/bose_integer_carries.md).
 - [Detailed same-model audit](proofs/audit_20261105_c021.md).
 - [Download code, inputs and historical evidence](C021_review_packet.zip).
 - [Finite package recheck](validation/finite_recheck.json).
@@ -85,10 +85,12 @@ is in the note and the ZIP's `SOURCES.md`. No novelty clearance is claimed.
 
 The public ZIP is derived from the local review packet: local user-home paths
 are replaced by `<USER_HOME>`, manifests are recalculated, and the standalone
-note uses GitHub math delimiters. Historical receipt hashes refer to the
+note uses static SVG equations with a separate LaTeX source. Historical receipt hashes refer to the
 original local files; changed public copies and original/public hashes are
 identified in the export manifest. Third-party PDFs and external code are not
-included. The original local research records are preserved.
+included. The original local research records are preserved. The ZIP also retains
+byte-exact original proof/audit text in `archive/original_proofs/`; the
+readable copies quote literal stars to avoid Markdown emphasis.
 
 Publication does not change the mathematical review or novelty status.
 

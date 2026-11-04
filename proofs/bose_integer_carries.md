@@ -61,7 +61,7 @@ over F_p. Use squarefree modulus Q with roots theta, -w and -r together
 with their conjugates. These are two distinct quadratic factors and one
 linear factor by the exclusions above. On its three residue fields take
 respectively evaluation at theta with chi^j, at -w with chi^h, and at
--r with chi^(-h) restricted to F_p^*. The Chinese remainder theorem
+-r with chi^(-h) restricted to `F_p^*`. The Chinese remainder theorem
 makes this a character modulo Q, extended by zero at nonunits. It is
 nonprincipal because evaluation on either quadratic factor is onto K and
 at least one of j,h is nonzero modulo M. Even a trivial linear component
