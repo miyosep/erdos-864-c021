@@ -7,15 +7,16 @@ been established. This is a scoped construction theorem submitted for
 review, not a solution of Erdős #864. No experiment is used as a proof
 premise. The accompanying original proof and audit are preserved.
 
+[Download the editable LaTeX source](C021_REVIEW_NOTE_SOURCE.txt).
+
 ## Statement and quantifiers
 
-Let $p$ tend to infinity through odd primes, $K=\mathbb F_{p^2}$,
-$M=p^2-1$. For a primitive $\theta\in K$ and a residue $t$ modulo $M$ let
+Let p tend to infinity through odd primes, K=F_(p^2), M=p^2-1.
+For a primitive theta in K and a residue t modulo M let
 
-```math
-B_{p,\theta,t}
- =\{\mathrm{rep}_{[1,M]}(\log_\theta(\theta+a)+t):a\in\mathbb F_p\}.
-```
+![Equation 1](assets/equations/eq-01-light.svg#gh-light-mode-only)
+
+![Equation 1](assets/equations/eq-01-dark.svg#gh-dark-mode-only)
 
 Here rep selects the unique representative in {1,...,M}; in particular
 residue zero is represented by M. A cut tau in the convention
@@ -26,11 +27,9 @@ For an integer set A, count unordered pairs a<=b, including the diagonal.
 Call A admissible if at most one integer sum has more than one such
 representation. Put m=min B, v=max B and
 
-```math
-L_{p,\theta,t}
- =\min\{S-2m+1:S\in\mathbb Z,\ S>2v,
-                  \ B\cup(S-B)\text{ is admissible}\}.
-```
+![Equation 2](assets/equations/eq-02-light.svg#gh-light-mode-only)
+
+![Equation 2](assets/equations/eq-02-dark.svg#gh-dark-mode-only)
 
 The minimization allows an overall integer translation and uses the
 inclusive interval length, not just the difference of endpoints.
@@ -40,17 +39,15 @@ The set of feasible S is nonempty, as proved below.
 (-1,3), there exist c_J>0 and p_J such that for every odd prime
 p>=p_J, every theta,t above and every integer s with s/M in J,
 
-```math
-\#\{(b_1,b_2,b_3,b_4)\in B^4:b_1+b_2+b_3-b_4=s\}
- \ge c_J p^2.
-```
+![Equation 3](assets/equations/eq-03-light.svg#gh-light-mode-only)
+
+![Equation 3](assets/equations/eq-03-dark.svg#gh-dark-mode-only)
 
 In particular,
 
-```math
-\lim_{\substack{p\to\infty\\p\text{ odd prime}}}
- \ \sup_{\theta,t}\left|\frac{L_{p,\theta,t}}{p^2}-3\right|=0.
-```
+![Equation 4](assets/equations/eq-04-light.svg#gh-light-mode-only)
+
+![Equation 4](assets/equations/eq-04-dark.svg#gh-dark-mode-only)
 
 Equivalently, for each epsilon>0 there is P_epsilon independent of
 theta,t such that the displayed absolute value is below epsilon for
@@ -69,10 +66,9 @@ in short intervals and in residue classes*, arXiv:1204.0708v3,
 section 3.4, equations (3.31)--(3.33), printed pp.9--10:
 for a nonprincipal Dirichlet character Xi modulo Q in F_p[T],
 
-```math
-\left|\sum_{f\text{ monic},\deg f=n}\Lambda(f)\Xi(f)\right|
- \le (\deg Q-1)p^{n/2}.
-```
+![Equation 5](assets/equations/eq-05-light.svg#gh-light-mode-only)
+
+![Equation 5](assets/equations/eq-05-dark.svg#gh-dark-mode-only)
 
 At n=1 every monic f is T+b and Lambda(f)=1. Primitivity of Xi
 is not a hypothesis of (3.33). The local CRT character producing the
@@ -91,9 +87,9 @@ functions and continuous approximation of boxes with null boundary.
 so B has exactly p elements. Equality of two pair sums modulo M
 reduces, after cancelling the 2t translation, to
 
-```math
-(\theta+a)(\theta+b)=(\theta+c)(\theta+d).
-```
+![Equation 6](assets/equations/eq-06-light.svg#gh-light-mode-only)
+
+![Equation 6](assets/equations/eq-06-dark.svg#gh-dark-mode-only)
 
 Cancel theta^2 and compare coefficients in the basis 1,theta of
 K over F_p. This gives a+b=c+d and ab=cd. Hence the roots of the
@@ -109,27 +105,24 @@ For ANY integer Sidon B subset [1,L], write b=|B| and j=|B intersect
 [1,x]|, where 1<=x<L. Take an integer h>=1, a=x+h-1,
 d=L-x+h-1 and T=a+d. For the two pieces B_1,B_2 define
 
-```math
-g_i(y)=\#\{u\in B_i:0\le y-u<h\}.
-```
+![Equation 7](assets/equations/eq-07-light.svg#gh-light-mode-only)
+
+![Equation 7](assets/equations/eq-07-dark.svg#gh-dark-mode-only)
 
 Their supports have lengths at most a,d. Cauchy gives
 sum_y g_1(y)^2>=h^2 j^2/a and the corresponding lower bound
 h^2(b-j)^2/d for g_2. For g=g_1+g_2, nonnegativity and uniqueness
 of positive differences give
 
-```math
-\sum_y g(y)^2=hb+2\sum_{\substack{r>0\\r\in B-B}}(h-r)_+\le hb+h(h-1).
-```
+![Equation 8](assets/equations/eq-08-light.svg#gh-light-mode-only)
+
+![Equation 8](assets/equations/eq-08-dark.svg#gh-dark-mode-only)
 
 Consequently
 
-```math
-\begin{aligned}
-\frac{j^2}{a}+\frac{(b-j)^2}{d}&\le 1+\frac{b-1}{h},\\
-\left|\frac jb-\frac aT\right|^2&\le\frac{ad}{Tb^2}\left(1+\frac{b-1}{h}-\frac{b^2}{T}\right).
-\end{aligned}
-```
+![Equation 9](assets/equations/eq-09-light.svg#gh-light-mode-only)
+
+![Equation 9](assets/equations/eq-09-dark.svg#gh-dark-mode-only)
 
 The second formula follows by completing the square; its last bracket
 is nonnegative by the first inequality. For the present bases take
@@ -139,9 +132,9 @@ Thus j/p-x/M tends uniformly to zero in x and all base choices.
 Every fixed positive relative interval at either endpoint therefore
 contains base points for large p, uniformly. Hence
 
-```math
-\frac mM\longrightarrow0,\qquad\frac vM\longrightarrow1,\qquad\frac{v-m}{M}\longrightarrow1.
-```
+![Equation 10](assets/equations/eq-10-light.svg#gh-light-mode-only)
+
+![Equation 10](assets/equations/eq-10-dark.svg#gh-dark-mode-only)
 
 uniformly in theta,t.
 
@@ -152,9 +145,9 @@ uniqueness follows from the Sidon property; the mixed family is
 unique away from S by difference uniqueness. At S there are exactly
 p mixed unordered pairs. A low/mixed collision is exactly
 
-```math
-b_1+b_2=S+b_4-b_3\quad\Longleftrightarrow\quad b_1+b_2+b_3-b_4=S.
-```
+![Equation 11](assets/equations/eq-11-light.svg#gh-light-mode-only)
+
+![Equation 11](assets/equations/eq-11-dark.svg#gh-dark-mode-only)
 
 Such a collision also reflects to a different sum above S, violating
 admissibility. Conversely the absence of these collisions leaves only
@@ -179,9 +172,11 @@ The modular equation is L(a)L(b)L(c)=gamma L(e).
 Fix a, set k=L(a)/gamma and z=k L(b). If z!=bar(z), solving
 z(theta+c)=theta+e together with its conjugate gives
 
-```math
-L(c)=\frac{D(1-\overline z)}{z-\overline z}.\tag{A}
-```
+**(A)**
+
+![Equation A](assets/equations/eq-12-light.svg#gh-light-mode-only)
+
+![Equation A](assets/equations/eq-12-dark.svg#gh-dark-mode-only)
 
 Indeed conjugating the right side and subtracting gives exactly D;
 thus L(c)-theta is in F_p. Likewise
@@ -197,9 +192,9 @@ An explicit absolute bound for the excluded a is FOUR:
 * Put w=bar(gamma)/(bar(theta)+a)-bar(theta). The equation w=bar(w),
   after multiplying the nonzero denominators, is
 
-  ```math
-  \overline\gamma(\theta+a)-\gamma(\overline\theta+a)+D(\theta+a)(\overline\theta+a)=0.
-  ```
+  ![Equation 13](assets/equations/eq-13-light.svg#gh-light-mode-only)
+
+  ![Equation 13](assets/equations/eq-13-dark.svg#gh-dark-mode-only)
 
   Its leading coefficient is D, so it has at most two roots a in F_p.
 * w=-theta means bar(gamma)=-D(bar(theta)+a), with at most one solution.
@@ -207,16 +202,18 @@ An explicit absolute bound for the excluded a is FOUR:
 
 On each retained row k is nonreal. The affine function
 
-```math
-z-\overline z=(k-\overline k)b+k\theta-\overline k\,\overline\theta
-```
+![Equation 14](assets/equations/eq-14-light.svg#gh-light-mode-only)
+
+![Equation 14](assets/equations/eq-14-dark.svg#gh-dark-mode-only)
 
 has a unique root r in F_p: the ratio of its two anti-invariant
 coefficients is fixed by conjugation. For all b!=r, (A) becomes
 
-```math
-L(c)=\lambda\frac{b-w}{b-r},\qquad\lambda=-\frac{D\overline k}{k-\overline k}\ne0.\tag{B}
-```
+**(B)**
+
+![Equation B](assets/equations/eq-15-light.svg#gh-light-mode-only)
+
+![Equation B](assets/equations/eq-15-dark.svg#gh-dark-mode-only)
 
 There are p-1 retained columns per retained row. The resulting
 quadruples are distinct because their first two coordinates a,b are
@@ -231,15 +228,17 @@ Let chi(theta)=exp(2 pi i/M) have exact order M. For a Fourier mode
 (i,j,h), the varying part of a retained b-row, apart from constants
 of modulus one, is
 
-```math
-\chi^j(b+\theta)\,\chi^h(b-w)\,\chi^{-h}(b-r).\tag{C}
-```
+**(C)**
+
+![Equation C](assets/equations/eq-16-light.svg#gh-light-mode-only)
+
+![Equation C](assets/equations/eq-16-dark.svg#gh-dark-mode-only)
 
 Use polynomial variable T and
 
-```math
-Q(T)=m_\theta(T)\,m_{-w}(T)\,(T+r).
-```
+![Equation 17](assets/equations/eq-17-light.svg#gh-light-mode-only)
+
+![Equation 17](assets/equations/eq-17-dark.svg#gh-dark-mode-only)
 
 Both minimal polynomials are irreducible quadratics. They are distinct
 because w is nonreal and w is neither -theta nor -bar(theta). The
@@ -259,9 +258,9 @@ for Xi is required.
 Keating--Rudnick, arXiv:1204.0708v3, printed pp.9--10, section 3.4,
 (3.31)--(3.33), gives
 
-```math
-\left|\sum_{\substack{f\text{ monic}\\\deg f=n}}\Lambda(f)\Xi(f)\right|\le(\deg Q-1)p^{n/2},\qquad\Xi\text{ nonprincipal}.
-```
+![Equation 18](assets/equations/eq-18-light.svg#gh-light-mode-only)
+
+![Equation 18](assets/equations/eq-18-dark.svg#gh-dark-mode-only)
 
 At n=1 every monic linear has von Mangoldt weight one. Therefore
 the modulus of (C) summed over b!=r is at most 4sqrt(p).
@@ -296,9 +295,9 @@ frequency or shrinking boxes is used.
 For every y in J choose a box V_y with positive volume and closure
 inside the cube such that, throughout the box,
 
-```math
-0<x_1+x_2+x_3-y<1,
-```
+![Equation 19](assets/equations/eq-19-light.svg#gh-light-mode-only)
+
+![Equation 19](assets/equations/eq-19-dark.svg#gh-dark-mode-only)
 
 with strict positive margins. Such a box exists because
 (0,3) intersects (y,y+1) for every -1<y<3. The same inequalities
@@ -321,9 +320,9 @@ bound without confusing marginal uniformity with joint uniformity.
 All 3B-B values are at most 3v-m, so S=3v-m+1 is feasible and
 S>2v. This gives
 
-```math
-L_{p,\theta,t}\le3(v-m)+2=(3+o(1))M.
-```
+![Equation 20](assets/equations/eq-20-light.svg#gh-light-mode-only)
+
+![Equation 20](assets/equations/eq-20-dark.svg#gh-dark-mode-only)
 
 uniformly, by elementary preliminary 2. Suppose a fixed epsilon
 in (0,1) and arbitrarily large p allowed choices with

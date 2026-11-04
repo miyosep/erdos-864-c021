@@ -10,6 +10,7 @@ stored internal `PROVED` label is not an independent correctness certificate.
 ## Read the proof
 
 - [Standalone proof note](C021_REVIEW_NOTE.md), including all elementary premises.
+- [Editable LaTeX source](C021_REVIEW_NOTE_SOURCE.txt).
 - [Original C021 proof](proofs/bose_integer_carries.md).
 - [Detailed same-model audit](proofs/audit_20261105_c021.md).
 - [Download code, inputs and historical evidence](C021_review_packet.zip).
@@ -24,9 +25,9 @@ $B\cup(S-B)$ with integer $S>2\max B$, allowing an overall translation.
 An admissible set has at most one repeated unordered pair sum, with diagonal
 pairs included. The submitted claim is
 
-$$
-\sup_{\theta,t}\left|\frac{L_{p,\theta,t}}{p^2}-3\right|\longrightarrow0.
-$$
+![Uniform reflection-length limit](assets/equations/eq-04-light.svg#gh-light-mode-only)
+
+![Uniform reflection-length limit](assets/equations/eq-04-dark.svg#gh-dark-mode-only)
 
 The key intermediate claim is uniform coverage of every fixed compact interior
 range of integer $3B-B$ heights, with at least $c_Jp^2$ ordered witnesses.
@@ -90,3 +91,5 @@ identified in the export manifest. Third-party PDFs and external code are not
 included. The original local research records are preserved.
 
 Publication does not change the mathematical review or novelty status.
+
+Display equations are pre-rendered SVG assets for consistent layout, with light/dark variants. The original LaTeX is provided separately. Renderer provenance and license are in [assets/equations](assets/equations/RENDERING.md).

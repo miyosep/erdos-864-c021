@@ -1,0 +1,162 @@
+[
+  {
+    "number": 1,
+    "label": null,
+    "latex": "B_{p,\\theta,t}\n =\\{\\mathrm{rep}_{[1,M]}(\\log_\\theta(\\theta+a)+t):a\\in\\mathbb F_p\\}.",
+    "rendered_latex": "B_{p,\\theta,t}\n =\\{\\mathrm{rep}_{[1,M]}(\\log_\\theta(\\theta+a)+t):a\\in\\mathbb F_p\\}.",
+    "width": 380,
+    "height": 30
+  },
+  {
+    "number": 2,
+    "label": null,
+    "latex": "L_{p,\\theta,t}\n =\\min\\{S-2m+1:S\\in\\mathbb Z,\\ S>2v,\n                  \\ B\\cup(S-B)\\text{ is admissible}\\}.",
+    "rendered_latex": "L_{p,\\theta,t}\n =\\min\\{S-2m+1:S\\in\\mathbb Z,\\ S>2v,\n                  \\ B\\cup(S-B)\\text{ is admissible}\\}.",
+    "width": 607,
+    "height": 28
+  },
+  {
+    "number": 3,
+    "label": null,
+    "latex": "\\#\\{(b_1,b_2,b_3,b_4)\\in B^4:b_1+b_2+b_3-b_4=s\\}\n \\ge c_J p^2.",
+    "rendered_latex": "\\#\\{(b_1,b_2,b_3,b_4)\\in B^4:b_1+b_2+b_3-b_4=s\\}\n \\ge c_J p^2.",
+    "width": 469,
+    "height": 30
+  },
+  {
+    "number": 4,
+    "label": null,
+    "latex": "\\lim_{\\substack{p\\to\\infty\\\\p\\text{ odd prime}}}\n \\ \\sup_{\\theta,t}\\left|\\frac{L_{p,\\theta,t}}{p^2}-3\\right|=0.",
+    "rendered_latex": "\\lim_{\\substack{p\\to\\infty\\\\p\\text{ odd prime}}}\n \\ \\sup_{\\theta,t}\\left|\\frac{L_{p,\\theta,t}}{p^2}-3\\right|=0.",
+    "width": 265,
+    "height": 65
+  },
+  {
+    "number": 5,
+    "label": null,
+    "latex": "\\left|\\sum_{f\\text{ monic},\\deg f=n}\\Lambda(f)\\Xi(f)\\right|\n \\le (\\deg Q-1)p^{n/2}.",
+    "rendered_latex": "\\left|\\sum_{f\\text{ monic},\\deg f=n}\\Lambda(f)\\Xi(f)\\right|\n \\le (\\deg Q-1)p^{n/2}.",
+    "width": 373,
+    "height": 71
+  },
+  {
+    "number": 6,
+    "label": null,
+    "latex": "(\\theta+a)(\\theta+b)=(\\theta+c)(\\theta+d).",
+    "rendered_latex": "(\\theta+a)(\\theta+b)=(\\theta+c)(\\theta+d).",
+    "width": 275,
+    "height": 27
+  },
+  {
+    "number": 7,
+    "label": null,
+    "latex": "g_i(y)=\\#\\{u\\in B_i:0\\le y-u<h\\}.",
+    "rendered_latex": "g_i(y)=\\#\\{u\\in B_i:0\\le y-u<h\\}.",
+    "width": 312,
+    "height": 27
+  },
+  {
+    "number": 8,
+    "label": null,
+    "latex": "\\sum_y g(y)^2=hb+2\\sum_{\\substack{r>0\\\\r\\in B-B}}(h-r)_+\\le hb+h(h-1).",
+    "rendered_latex": "\\sum_y g(y)^2=hb+2\\sum_{\\substack{r>0\\\\r\\in B-B}}(h-r)_+\\le hb+h(h-1).",
+    "width": 439,
+    "height": 62
+  },
+  {
+    "number": 9,
+    "label": null,
+    "latex": "\\begin{aligned}\n\\frac{j^2}{a}+\\frac{(b-j)^2}{d}&\\le 1+\\frac{b-1}{h},\\\\\n\\left|\\frac jb-\\frac aT\\right|^2&\\le\\frac{ad}{Tb^2}\\left(1+\\frac{b-1}{h}-\\frac{b^2}{T}\\right).\n\\end{aligned}",
+    "rendered_latex": "\\begin{aligned}\n\\frac{j^2}{a}+\\frac{(b-j)^2}{d}&\\le 1+\\frac{b-1}{h},\\\\\n\\left|\\frac jb-\\frac aT\\right|^2&\\le\\frac{ad}{Tb^2}\\left(1+\\frac{b-1}{h}-\\frac{b^2}{T}\\right).\n\\end{aligned}",
+    "width": 370,
+    "height": 107
+  },
+  {
+    "number": 10,
+    "label": null,
+    "latex": "\\frac mM\\longrightarrow0,\\qquad\\frac vM\\longrightarrow1,\\qquad\\frac{v-m}{M}\\longrightarrow1.",
+    "rendered_latex": "\\frac mM\\longrightarrow0,\\qquad\\frac vM\\longrightarrow1,\\qquad\\frac{v-m}{M}\\longrightarrow1.",
+    "width": 392,
+    "height": 46
+  },
+  {
+    "number": 11,
+    "label": null,
+    "latex": "b_1+b_2=S+b_4-b_3\\quad\\Longleftrightarrow\\quad b_1+b_2+b_3-b_4=S.",
+    "rendered_latex": "b_1+b_2=S+b_4-b_3\\quad\\Longleftrightarrow\\quad b_1+b_2+b_3-b_4=S.",
+    "width": 465,
+    "height": 24
+  },
+  {
+    "number": 12,
+    "label": "A",
+    "latex": "L(c)=\\frac{D(1-\\overline z)}{z-\\overline z}.\\tag{A}",
+    "rendered_latex": "L(c)=\\frac{D(1-\\overline z)}{z-\\overline z}.",
+    "width": 162,
+    "height": 52
+  },
+  {
+    "number": 13,
+    "label": null,
+    "latex": "\\overline\\gamma(\\theta+a)-\\gamma(\\overline\\theta+a)+D(\\theta+a)(\\overline\\theta+a)=0.",
+    "rendered_latex": "\\overline\\gamma(\\theta+a)-\\gamma(\\overline\\theta+a)+D(\\theta+a)(\\overline\\theta+a)=0.",
+    "width": 377,
+    "height": 32
+  },
+  {
+    "number": 14,
+    "label": null,
+    "latex": "z-\\overline z=(k-\\overline k)b+k\\theta-\\overline k\\,\\overline\\theta",
+    "rendered_latex": "z-\\overline z=(k-\\overline k)b+k\\theta-\\overline k\\,\\overline\\theta",
+    "width": 239,
+    "height": 32
+  },
+  {
+    "number": 15,
+    "label": "B",
+    "latex": "L(c)=\\lambda\\frac{b-w}{b-r},\\qquad\\lambda=-\\frac{D\\overline k}{k-\\overline k}\\ne0.\\tag{B}",
+    "rendered_latex": "L(c)=\\lambda\\frac{b-w}{b-r},\\qquad\\lambda=-\\frac{D\\overline k}{k-\\overline k}\\ne0.",
+    "width": 338,
+    "height": 62
+  },
+  {
+    "number": 16,
+    "label": "C",
+    "latex": "\\chi^j(b+\\theta)\\,\\chi^h(b-w)\\,\\chi^{-h}(b-r).\\tag{C}",
+    "rendered_latex": "\\chi^j(b+\\theta)\\,\\chi^h(b-w)\\,\\chi^{-h}(b-r).",
+    "width": 273,
+    "height": 30
+  },
+  {
+    "number": 17,
+    "label": null,
+    "latex": "Q(T)=m_\\theta(T)\\,m_{-w}(T)\\,(T+r).",
+    "rendered_latex": "Q(T)=m_\\theta(T)\\,m_{-w}(T)\\,(T+r).",
+    "width": 280,
+    "height": 27
+  },
+  {
+    "number": 18,
+    "label": null,
+    "latex": "\\left|\\sum_{\\substack{f\\text{ monic}\\\\\\deg f=n}}\\Lambda(f)\\Xi(f)\\right|\\le(\\deg Q-1)p^{n/2},\\qquad\\Xi\\text{ nonprincipal}.",
+    "rendered_latex": "\\left|\\sum_{\\substack{f\\text{ monic}\\\\\\deg f=n}}\\Lambda(f)\\Xi(f)\\right|\\le(\\deg Q-1)p^{n/2},\\qquad\\Xi\\text{ nonprincipal}.",
+    "width": 497,
+    "height": 100
+  },
+  {
+    "number": 19,
+    "label": null,
+    "latex": "0<x_1+x_2+x_3-y<1,",
+    "rendered_latex": "0<x_1+x_2+x_3-y<1,",
+    "width": 229,
+    "height": 24
+  },
+  {
+    "number": 20,
+    "label": null,
+    "latex": "L_{p,\\theta,t}\\le3(v-m)+2=(3+o(1))M.",
+    "rendered_latex": "L_{p,\\theta,t}\\le3(v-m)+2=(3+o(1))M.",
+    "width": 326,
+    "height": 28
+  }
+]

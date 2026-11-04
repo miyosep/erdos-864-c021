@@ -13,12 +13,12 @@
     {
       "path": "C021_REVIEW_NOTE.md",
       "original_sha256": "bd9228728cbeec1bf0531b7df1c4d76903a51d0343319a801b8a5f9566645798",
-      "public_sha256": "6022d0c32a8927a132b8e4cba2b03160c59b11950d36b918fe4e95ebc3cc7cb3"
+      "public_sha256": "056ca29f3f28f857874f9ab00e2c7836989f9356a811c7ae9e8e1453807967f2"
     },
     {
       "path": "C021_REVIEW_NOTE.txt",
       "original_sha256": "bd9228728cbeec1bf0531b7df1c4d76903a51d0343319a801b8a5f9566645798",
-      "public_sha256": "6022d0c32a8927a132b8e4cba2b03160c59b11950d36b918fe4e95ebc3cc7cb3"
+      "public_sha256": "056ca29f3f28f857874f9ab00e2c7836989f9356a811c7ae9e8e1453807967f2"
     },
     {
       "path": "README.txt",
@@ -66,5 +66,15 @@
     "blocked_operatorname_macro_removed": true,
     "historical_receipt_timestamps_preserved": true,
     "mathematical_claim_or_review_status_changed": false
+  },
+  "static_equation_revision": {
+    "method": "20 pre-rendered SVG equations; 40 light/dark files; labels outside math layout",
+    "renderer": "mathjax-full@3.2.2",
+    "license": "Apache-2.0",
+    "visual_review": "All twenty equations inspected in light and dark contact sheets, including B/C",
+    "editable_source": "C021_REVIEW_NOTE_SOURCE.txt",
+    "previous_note_sha256": "6022d0c32a8927a132b8e4cba2b03160c59b11950d36b918fe4e95ebc3cc7cb3",
+    "current_note_sha256": "056ca29f3f28f857874f9ab00e2c7836989f9356a811c7ae9e8e1453807967f2",
+    "mathematical_claim_changed": false
   }
 }
