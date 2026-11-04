@@ -6,13 +6,13 @@
   "pdf_sha256": "1db71cc0e3736e1598cf70989f9a0ba17ce324c1ee6527b72a285da9e31c047a",
   "tex_sha256": "20549fe4cca9b2a7cf30626f9a620c9b4a7357a7e557852f785c67509ee511c7",
   "markdown_sha256": "ae4a01e485676b45e014d8d214a982001672a58945c8044b97df60739de8592f",
-  "changes": "Supplement destination updated for repository migration; no mathematical or author changes.",
-  "source_commit_before_restructure": "82759f9d02f5352139997d644f4afcc62a47bcc7",
+  "changes": "Current manuscript build with embedded computational-supplement link.",
   "public_check_code": {
-    "check_extensions.py": "9ef96533120e67d82ca9fd7af562880a78d7676e241fd460307ddf491469c1c1",
-    "check_repository.py": "2aa6d19f2c76b37a1bf9465e6d03c24e654a77e0e2550e864feb37def4ac6bb5",
-    "check_singular_fibres.py": "cce821202bbc8d78684cb81429156fb9d6c8fbaa18a70bdcb27b0da9a6754ef4",
+    "check_extensions.py": "d96ae1a9998dd139b0c411ee541d36c1b8b7233fc8189363b13b4cb0eebfa8c3",
+    "check_repository.py": "849423e75242f0198882b1d44d6bba62cd7d4dddfb18568c2b6950e9007f95fd",
+    "check_singular_fibres.py": "abc775fa5a7f823af393712dfae522e0dc3379289ad4e517b4d957f066f3f227",
     "limits.py": "a66b4efb411196326c73217296683bae8bdbb2af94fa84b9d78c2a0f8d6f7c29"
   },
-  "visual_review": "All 11 current page PNGs inspected by the same AI model; not independent mathematical review."
+  "visual_review": "All 11 current page PNGs inspected by the same AI model; not independent mathematical review.",
+  "source_commit": "bc859f46197916b1c08ad9f311b2408b9fbee972"
 }

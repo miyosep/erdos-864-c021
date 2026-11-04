@@ -34,9 +34,9 @@ threshold, the external character estimate or priority.
 The two mathematical implementations use different field models and were
 written in the same model context. Standalone arguments, fresh outputs,
 resource bounds and nonzero limit exits support reproducible execution.
-The evidence records execution details, output hashes and code-comparison
-provenance. Implementation-independence flags describe code development;
-they do not identify an independent mathematical reviewer.
+The evidence records execution details, executed-code hashes, dependencies
+and output hashes. Each result explicitly records that independent expert
+review and formal verification have not been established.
 
 The [gap audit](GAP_AUDIT.md) provides the algebra and literature comparisons.
 Repository checks establish source/link/file integrity, not mathematical

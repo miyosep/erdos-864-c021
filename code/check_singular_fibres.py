@@ -1,4 +1,4 @@
-"""Exact new verifier in F_p[X]/(X^2-X-d); no historical-code imports."""
+"""Finite parametrization and lift checks in F_p[X]/(X^2-X-d)."""
 import argparse
 from limits import configure, deadline_check
 from collections import Counter
@@ -180,8 +180,8 @@ def geometry():
 
 
 out = dict(seed=os.environ.get('MATH_SEED'), workers=1,
-           independent_implementation_of_historical_code=True,
-           independent_reviewer_or_formal_proof=False,
+           independent_expert_review=False,
+           formal_verification=False,
            note='Finite checks do not verify the asymptotic limit or external character theorem.')
 try:
     out['prime_checks'] = [check_prime(p) for p in (3, 5, 7)]

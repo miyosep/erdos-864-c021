@@ -1,115 +1,187 @@
 {
-  "status": "PASS",
-  "states": 17,
-  "periods": 0,
-  "workers": 1,
-  "truncated": false,
-  "mathematical_functions": [
-    {
-      "original": "archive/workspace/verifiers/review_c021_singular_uniform.py",
-      "current": "code/check_singular_fibres.py",
-      "equal_functions": [
-        "check_prime",
-        "geometry"
-      ],
-      "excluded": "main, tick and period (CLI/budget handling)",
-      "original_url": "https://github.com/miyosep/erdos-864-c021/blob/eca15a265f77e8fd875d4559bbbd0e21582c8405/archive/workspace/verifiers/review_c021_singular_uniform.py"
-    },
-    {
-      "original": "archive/workspace/experiments/check_c021_extensions.py",
-      "current": "code/check_extensions.py",
-      "equal_functions": [
-        "Budget.__init__",
-        "Field.__init__",
-        "Field.add",
-        "Field.bar",
-        "Field.div",
-        "Field.mul",
-        "Field.neg",
-        "Field.primitives",
-        "Field.sub",
-        "Field.table",
-        "admissible",
-        "audit",
-        "crt_lifts",
-        "deletions",
-        "direct_hist",
-        "hist",
-        "limits",
-        "profile",
-        "reflection"
-      ],
-      "excluded": "main, tick and period (CLI/budget handling)",
-      "original_url": "https://github.com/miyosep/erdos-864-c021/blob/eca15a265f77e8fd875d4559bbbd0e21582c8405/archive/workspace/experiments/check_c021_extensions.py"
-    }
-  ],
-  "fresh_finite_runs": [
+  "kind": "Finite consistency checks of the distributed programs",
+  "independent_expert_review": false,
+  "formal_verification": false,
+  "runs": [
     {
       "mode": "singular_uniform",
-      "workspace_run_id": "20261104T192522-6c21ec9dacce4d038b172e54d98b6218",
+      "entry_point": "code/check_singular_fibres.py",
+      "code_sha256": "abc775fa5a7f823af393712dfae522e0dc3379289ad4e517b4d957f066f3f227",
+      "dependencies": {
+        "code/limits.py": "a66b4efb411196326c73217296683bae8bdbb2af94fa84b9d78c2a0f8d6f7c29"
+      },
+      "execution_id": "20261104T195002-31de969b5ff743d5ab6794295ff32093",
+      "finished_at": "2026-11-04T19:50:03.579771+00:00",
+      "elapsed_seconds": 0.6806170999770984,
       "exit_code": 0,
-      "elapsed_seconds": 0.5509847000939772,
+      "status": "PASS",
       "states": 775680,
       "periods": 4211,
+      "limits": {
+        "states": 2000000,
+        "periods": 1000000,
+        "workers": 1
+      },
+      "workers": 1,
+      "truncated": false,
+      "software_versions": {
+        "runner_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.26300-SP0",
+        "declared_command_software": {},
+        "command_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]"
+      },
       "public_output": "evidence/results/singular_uniform.json",
-      "sha256": "438ee18f9268bacb00a4a36379cddf75edff52a07142fdb65b8711342f87f347"
+      "sha256": "10535542b162a133b0affe5658008e229fc37d87c3a5b19a7541b78ef003589a"
     },
     {
       "mode": "audit",
-      "workspace_run_id": "20261104T192537-26b490e915554192a19dc7ee3f91c471",
+      "entry_point": "code/check_extensions.py",
+      "code_sha256": "d96ae1a9998dd139b0c411ee541d36c1b8b7233fc8189363b13b4cb0eebfa8c3",
+      "dependencies": {
+        "code/limits.py": "a66b4efb411196326c73217296683bae8bdbb2af94fa84b9d78c2a0f8d6f7c29"
+      },
+      "execution_id": "20261104T195003-5d576e07a88848079903f86e4b2893e4",
+      "finished_at": "2026-11-04T19:50:05.570640+00:00",
+      "elapsed_seconds": 1.5572896999074146,
       "exit_code": 0,
-      "elapsed_seconds": 1.6025295000290498,
+      "status": "PASS",
       "states": 1345551,
       "periods": 272,
+      "limits": {
+        "states": 2000000,
+        "periods": 1000000,
+        "workers": 1
+      },
+      "workers": 1,
+      "truncated": false,
+      "software_versions": {
+        "runner_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.26300-SP0",
+        "declared_command_software": {},
+        "command_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]"
+      },
       "public_output": "evidence/results/audit.json",
-      "sha256": "27ecfc7d27706581d29466a6ea29a7621b56874ecd614cdccc67a9492882cce0"
+      "sha256": "d819f2b1d4d55d834bdb1ce76b7e3158ee5f3474243ce0139d01a3b78ef87d05"
     },
     {
       "mode": "limits",
-      "workspace_run_id": "20261104T192539-816dfd473d284eeb9faadfe4177be821",
+      "entry_point": "code/check_extensions.py",
+      "code_sha256": "d96ae1a9998dd139b0c411ee541d36c1b8b7233fc8189363b13b4cb0eebfa8c3",
+      "dependencies": {
+        "code/limits.py": "a66b4efb411196326c73217296683bae8bdbb2af94fa84b9d78c2a0f8d6f7c29"
+      },
+      "execution_id": "20261104T195005-7ce29aac593e46f2987ee5fd3b5b19c2",
+      "finished_at": "2026-11-04T19:50:07.165799+00:00",
+      "elapsed_seconds": 1.2619185000658035,
       "exit_code": 0,
-      "elapsed_seconds": 1.241098599974066,
+      "status": "PASS",
       "states": 462653,
       "periods": 21,
+      "limits": {
+        "states": 2000000,
+        "periods": 1000000,
+        "workers": 1
+      },
+      "workers": 1,
+      "truncated": false,
+      "software_versions": {
+        "runner_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.26300-SP0",
+        "declared_command_software": {},
+        "command_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]"
+      },
       "public_output": "evidence/results/limits.json",
-      "sha256": "b83158d938fa532020aa7598c304c051c444d80a206080efe666fc9914af7567"
+      "sha256": "b4d9ea727cb7aed41f174daa20090f7ded09d333878ad86fea4ded5917572321"
     },
     {
       "mode": "reflection",
-      "workspace_run_id": "20261104T192540-a13c42fe950043b9b0803e038483a40e",
+      "entry_point": "code/check_extensions.py",
+      "code_sha256": "d96ae1a9998dd139b0c411ee541d36c1b8b7233fc8189363b13b4cb0eebfa8c3",
+      "dependencies": {
+        "code/limits.py": "a66b4efb411196326c73217296683bae8bdbb2af94fa84b9d78c2a0f8d6f7c29"
+      },
+      "execution_id": "20261104T195007-05b34fbe93f14889abe0c9b811466c56",
+      "finished_at": "2026-11-04T19:50:07.990083+00:00",
+      "elapsed_seconds": 0.47893600002862513,
       "exit_code": 0,
-      "elapsed_seconds": 0.4532352000242099,
+      "status": "PASS",
       "states": 750850,
       "periods": 224,
+      "limits": {
+        "states": 2000000,
+        "periods": 1000000,
+        "workers": 1
+      },
+      "workers": 1,
+      "truncated": false,
+      "software_versions": {
+        "runner_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.26300-SP0",
+        "declared_command_software": {},
+        "command_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]"
+      },
       "public_output": "evidence/results/reflection.json",
-      "sha256": "b2c47bbba001daf21a069c8b173a5511f27af579fdb824086e68f200bf80d9bb"
+      "sha256": "1a9b00a136dd3657f80f07e4f33565d282ae542892c49e623d54cb2c0f06e61b"
     },
     {
       "mode": "deletions",
-      "workspace_run_id": "20261104T192541-85e82da11f2e45e4a99d691feec756c5",
+      "entry_point": "code/check_extensions.py",
+      "code_sha256": "d96ae1a9998dd139b0c411ee541d36c1b8b7233fc8189363b13b4cb0eebfa8c3",
+      "dependencies": {
+        "code/limits.py": "a66b4efb411196326c73217296683bae8bdbb2af94fa84b9d78c2a0f8d6f7c29"
+      },
+      "execution_id": "20261104T195008-5656f5f627ea414d8e3f3a887645963d",
+      "finished_at": "2026-11-04T19:50:08.508158+00:00",
+      "elapsed_seconds": 0.17312600009609014,
       "exit_code": 0,
-      "elapsed_seconds": 0.18964869994670153,
+      "status": "PASS",
       "states": 51919,
       "periods": 338,
+      "limits": {
+        "states": 2000000,
+        "periods": 1000000,
+        "workers": 1
+      },
+      "workers": 1,
+      "truncated": false,
+      "software_versions": {
+        "runner_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.26300-SP0",
+        "declared_command_software": {},
+        "command_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]"
+      },
       "public_output": "evidence/results/deletions.json",
-      "sha256": "aebfe9ea5e9783e73e7d8cfb2c1504d9f4829518b6c1332d99c4da0e2263a3f4"
+      "sha256": "371779f8b882581f10c2c327ca6ff53c2820c7dfaf983a6ee92f88555b3d37e9"
     },
     {
       "mode": "crt_lifts",
-      "workspace_run_id": "20261104T192542-b508c383bc974fa9bbb649eff047044c",
+      "entry_point": "code/check_extensions.py",
+      "code_sha256": "d96ae1a9998dd139b0c411ee541d36c1b8b7233fc8189363b13b4cb0eebfa8c3",
+      "dependencies": {
+        "code/limits.py": "a66b4efb411196326c73217296683bae8bdbb2af94fa84b9d78c2a0f8d6f7c29"
+      },
+      "execution_id": "20261104T195008-10a46d727e0a4180a6ee36ba95555b05",
+      "finished_at": "2026-11-04T19:50:09.342487+00:00",
+      "elapsed_seconds": 0.4845693000825122,
       "exit_code": 0,
-      "elapsed_seconds": 0.46589039999525994,
+      "status": "PASS",
       "states": 767346,
       "periods": 4864,
+      "limits": {
+        "states": 2000000,
+        "periods": 1000000,
+        "workers": 1
+      },
+      "workers": 1,
+      "truncated": false,
+      "software_versions": {
+        "runner_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.26300-SP0",
+        "declared_command_software": {},
+        "command_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]"
+      },
       "public_output": "evidence/results/crt_lifts.json",
-      "sha256": "3361a96194b7184e0671bad9e404ea58da01029448f0dfa29eb0494d14db60f1"
+      "sha256": "b8983430e2ef903a6eb6b59dbb581ee940ff441c57140fa1c441e07074afca62"
     }
-  ],
-  "pdf_pages": 11,
-  "equation_tags": 28,
-  "pdf_author": "Sage Kim",
-  "affiliation": "Peking University",
-  "new_pdf_supplement_link_checked": true,
-  "mathematical_correctness_verified": false,
-  "comparison_snapshot_commit": "eca15a265f77e8fd875d4559bbbd0e21582c8405"
+  ]
 }

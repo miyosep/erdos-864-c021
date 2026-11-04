@@ -1,8 +1,8 @@
 {
   "part": "crt_lifts",
   "seed": null,
-  "independent_of_historical_code": true,
-  "formal_or_independent_reviewer": false,
+  "independent_expert_review": false,
+  "formal_verification": false,
   "data": {
     "modular_witness_cut_checks": 122592,
     "zero_or_one_boundary_cases": 10648,

@@ -1,8 +1,8 @@
 {
   "seed": null,
   "workers": 1,
-  "independent_implementation_of_historical_code": true,
-  "independent_reviewer_or_formal_proof": false,
+  "independent_expert_review": false,
+  "formal_verification": false,
   "note": "Finite checks do not verify the asymptotic limit or external character theorem.",
   "prime_checks": [
     {

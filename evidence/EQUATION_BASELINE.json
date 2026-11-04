@@ -1,8 +1,8 @@
 {
-  "kind": "Frozen display-equation integrity baseline, not proof certification",
-  "source_commit": "eca15a265f77e8fd875d4559bbbd0e21582c8405",
-  "source_path": "archive/workspace/proofs/quadratic_bose_chowla_integer_counts.md",
-  "original_file_sha256": "450ccfea0173e9f85230374e38b656b3d9795eef6d5b1627ac94d8bcf9bf336c",
+  "kind": "Display-equation integrity baseline, not proof certification",
+  "source_commit": "bc859f46197916b1c08ad9f311b2408b9fbee972",
+  "source_path": "paper/main.md",
+  "source_file_sha256": "ae4a01e485676b45e014d8d214a982001672a58945c8044b97df60739de8592f",
   "normalization": "Remove all whitespace from each display in source order, then SHA-256 UTF-8",
   "displays_sha256": [
     "3f6419e3cdfb56baf968ac95969d1274578a6e14feb62c6cd03e7c64faf75996",

@@ -70,8 +70,8 @@ if the union is admissible. Each of the three degeneracy classes
 has at most 2|C| witnesses; hence R_C(S)≤6|C|. Diagonals are included.
 The overlap bound is ≤2 and the true hull is
 v_C−m_C+|S−(m_C+v_C)|+1 at every integer height. These facts justify
-the complete all-height reduction; the old separated-only criterion
-R_C(S)=0 must not be used in the overlapping case.
+the complete all-height reduction. The condition R_C(S)=0 must not be
+used as a necessary criterion in the overlapping case.
 
 The deletion incidence bound follows even more directly by fixing any
 one slot and then a second slot; the remaining two elements have at

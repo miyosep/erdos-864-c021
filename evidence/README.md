@@ -4,7 +4,7 @@ This directory keeps evidence needed to inspect or reproduce the current code.
 
 | File | Purpose |
 | --- | --- |
-| [FINITE_CHECKS.json](FINITE_CHECKS.json) | Six actual runs, scope counters, runtime, output hashes and code-comparison provenance |
+| [FINITE_CHECKS.json](FINITE_CHECKS.json) | Six actual runs, scope counters, runtime, executed-code hashes and output hashes |
 | [results/](results/) | Complete outputs for singular fibres, algebra, profiles, reflections, deletions and CRT/lifts |
 | [BUILD.json](BUILD.json) | Paper/code hashes, compiler and visual-review record |
 | [EQUATION_BASELINE.json](EQUATION_BASELINE.json) | Frozen hashes of 51 displays, with immutable source commit and path |

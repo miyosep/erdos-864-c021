@@ -1,4 +1,4 @@
-"""Fresh stdlib implementation; no imports from historical research code.
+"""Finite consistency checks in F_p[X]/(X^2-d).
 
 Run standalone with a mode and optional --output directory. Search states are inner candidate visits;
 periods count tested cuts/targets. One worker. JSON records exact finite scope.
@@ -396,7 +396,7 @@ def main():
     configure(args.output, args.part)
     cap = Budget()
     result = dict(part=args.part, seed=os.environ.get('MATH_SEED'),
-                  independent_of_historical_code=True, formal_or_independent_reviewer=False)
+                  independent_expert_review=False, formal_verification=False)
     try:
         result['data'] = globals()[args.part](cap)
         result['status'] = 'PASS'

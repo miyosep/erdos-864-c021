@@ -42,20 +42,31 @@ for path in root.rglob('*'):
     distributed.add(rel.as_posix())
 check(distributed == set(checksum_paths), 'checksum inventory covers distributed files')
 finite = json.loads((root/'evidence/FINITE_CHECKS.json').read_text(encoding='utf-8'))
-for record in finite['fresh_finite_runs']:
+for record in finite['runs']:
     path = root/record['public_output']
     check(path.is_file() and digest(path) == record['sha256'], 'recorded '+record['mode'])
     data = json.loads(path.read_text(encoding='utf-8'))
     check(data['status']=='PASS' and not data['truncated'], 'completed '+record['mode'])
-check(not (root/'HISTORY.md').exists(), 'current-only navigation')
+    check(digest(root/record['entry_point'])==record['code_sha256'], 'executed code '+record['mode'])
+    for name, sha in record['dependencies'].items():
+        check(digest(root/name)==sha, 'executed dependency '+name)
+allowed_roots={'.gitattributes','.gitignore','README.md','REPRODUCING.md',
+               'SHA256SUMS.txt','paper','review','code','evidence'}
+check({Path(name).parts[0] for name in checksum_paths} <= allowed_roots, 'reader-facing repository roots')
+for name in checksum_paths:
+    path=root/name
+    if path.suffix=='.pdf':
+        continue
+    content=path.read_text(encoding='utf-8')
+    check(not any(ord(c)<32 and c not in '\n\t' for c in content), 'text encoding '+name)
+    for target in re.findall(r'https://github[.]com/miyosep/erdos-864-c021/(?:blob|tree)/[^/]+/([^\s)"}>]+)',content):
+        check((root/target).exists(), 'repository URL target '+target)
 documents = [root/'README.md', root/'REPRODUCING.md', root/'evidence/README.md']
 for directory in ['paper','review','code']:
     documents.extend((root/directory).glob('*.md'))
 links = 0
 for document in documents:
     content = document.read_text(encoding='utf-8')
-    check('HISTORY.md' not in content and 'historical drafts' not in content.lower()
-          and 'REPOSITORY_REVIEW.md' not in content, 'current-only reader guide '+document.name)
     for link in re.findall(r'\]\(([^)]+)\)', content):
         if re.match(r'https?://|#', link):
             continue
@@ -65,6 +76,7 @@ for document in documents:
 paper = (root/'paper/main.md').read_text(encoding='utf-8')
 tex = (root/'paper/main.tex').read_text(encoding='utf-8')
 baseline = json.loads((root/'evidence/EQUATION_BASELINE.json').read_text(encoding='utf-8'))
+check(digest(root/baseline['source_path'])==baseline['source_file_sha256'], 'baseline source file')
 blocks = lambda value: re.findall(r'^[ ]*\$\$[ \t]*\n(.*?)^[ ]*\$\$[ \t]*$', value, re.M|re.S)
 compact = lambda values: [re.sub(r'\s+', '', value) for value in values]
 displays = blocks(paper)
@@ -76,10 +88,9 @@ check(re.findall(r'\\tag\{(\d+)\}', paper) == [str(i) for i in range(1,29)], '28
 check(r'\author{Sage Kim\\Peking University}' in tex and 'pdfauthor={Sage Kim}' in tex, 'author and affiliation')
 check('AI assistance' not in paper and 'AI assistance' not in tex, 'requested manuscript presentation')
 check('/blob/main/review/COMPUTATIONAL_SUPPLEMENT.md' in tex, 'PDF supplement destination')
-check('/blob/main/manuscript/' not in tex, 'obsolete PDF destination absent')
 check((root/'paper/main.pdf').read_bytes().startswith(b'%PDF-'), 'PDF exists')
 result = dict(status='PASS', states=states, periods=0, workers=1, truncated=False,
-    current_local_links=links, checksum_files=len(checksum_paths), recorded_finite_outputs=len(finite['fresh_finite_runs']),
+    current_local_links=links, checksum_files=len(checksum_paths), recorded_finite_outputs=len(finite['runs']),
     displayed_expressions=51, equation_tags=28, mathematical_correctness_verified=False)
 (Path(os.environ['MATH_RUN_DIR'])/'outputs/repository_checks.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(result))
