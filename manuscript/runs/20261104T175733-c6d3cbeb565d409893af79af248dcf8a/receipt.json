@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "run_id": "20261104T175733-c6d3cbeb565d409893af79af248dcf8a",
+  "problem_id": "erdos_864",
+  "session_id": "e864_20261105_03_extensions",
+  "command": [
+    "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "experiments/check_c021_extensions.py",
+    "limits"
+  ],
+  "working_directory": "<USER_HOME>\\Desktop\\math_research\\problems\\erdos_864",
+  "software_versions": {
+    "runner_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "declared_command_software": {},
+    "command_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]"
+  },
+  "seed": null,
+  "hashes": {
+    "inputs": {
+      "budget.json": {
+        "sha256": "861362710cb8e03fcd4ea2eb7a37adf6147283214bd5c007743ba8ac072a831a",
+        "snapshot": "snapshots/inputs/budget.json"
+      },
+      "proofs/investigation_20261105_extensions.md": {
+        "sha256": "7f752f0aac915cf458d7109ac146c418cf8e8c9e6e1d499c8869f4a473cf4b2c",
+        "snapshot": "snapshots/inputs/proofs/investigation_20261105_extensions.md"
+      },
+      "proofs/c021_rederived_foundation.md": {
+        "sha256": "c94635ac5d9518e87891b1ba16e6d687b4d5720183021adc5924b0ff17299986",
+        "snapshot": "snapshots/inputs/proofs/c021_rederived_foundation.md"
+      }
+    },
+    "code": {
+      "experiments/check_c021_extensions.py": {
+        "sha256": "7a30c1298896d676f0c7edbf14ebee56a1c3d72ec06b6a8123b5d7a0431fa65c",
+        "snapshot": "snapshots/code/experiments/check_c021_extensions.py"
+      },
+      "runner": {
+        "path": "<USER_HOME>\\Desktop\\math_research\\tools\\run_job.py",
+        "sha256": "51a0e1a0717d14c16326ab461d405afbf39af306f01384c0ac163545ed0cf4ee"
+      },
+      "command_argv": {
+        "sha256": "c6d987a94f765ee57afd2c81e70edf7b149047a7a52deacac8fe5cd95e0f53e4"
+      },
+      "executable": {
+        "path": "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "sha256": "5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed"
+      }
+    },
+    "outputs": {
+      "config.json": "1d61445f0f6986cc8682853be478f0da51b993cc00db087bc57074424a94e6ad",
+      "outputs/limits.json": "b83158d938fa532020aa7598c304c051c444d80a206080efe666fc9914af7567",
+      "results.json": "fa3a1664229672a61c792e65042bdc69a473b6e81b0d58ee7c84ecbb63a8617e",
+      "snapshots/code/experiments/check_c021_extensions.py": "7a30c1298896d676f0c7edbf14ebee56a1c3d72ec06b6a8123b5d7a0431fa65c",
+      "snapshots/inputs/budget.json": "861362710cb8e03fcd4ea2eb7a37adf6147283214bd5c007743ba8ac072a831a",
+      "snapshots/inputs/proofs/c021_rederived_foundation.md": "c94635ac5d9518e87891b1ba16e6d687b4d5720183021adc5924b0ff17299986",
+      "snapshots/inputs/proofs/investigation_20261105_extensions.md": "7f752f0aac915cf458d7109ac146c418cf8e8c9e6e1d499c8869f4a473cf4b2c",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout.txt": "769c2d907c969efe56743b764fe03dd244457bd0eb64cf636deaf610100bb616",
+      "verification.json": "3e3522ff77c082edf8b2ea31300e9cf0184cabe364e8047c88d5f0c40469860c"
+    }
+  },
+  "started_at": "2026-11-04T17:57:33.791270+00:00",
+  "finished_at": "2026-11-04T17:57:35.054963+00:00",
+  "elapsed_seconds": 1.263674799934961,
+  "exit_code": 0,
+  "resource_limits": {
+    "max_cycles_per_session": 3,
+    "max_parallel_workers": 1,
+    "max_seconds_per_job": 300,
+    "max_compute_seconds_per_session": 1800,
+    "max_states_per_job": 2000000,
+    "max_period_enumeration": 1000000,
+    "requested_seconds": 300.0,
+    "effective_seconds": 300.0,
+    "session_compute_seconds_before": 2.878898900002241,
+    "time_accounting": "wall-clock seconds, including process setup and cleanup",
+    "runner_parallel_jobs_per_problem": 1,
+    "memory_enforced": false,
+    "disk_enforced": false,
+    "state_period_and_internal_worker_limits": "cooperative program enforcement only"
+  },
+  "completion_status": "COMPLETED",
+  "session_compute_seconds_after": 4.142573699937202,
+  "control_method": "Windows kill-on-close Job Object, suspended launch",
+  "error": null
+}

@@ -1,0 +1,8 @@
+{
+  "max_cycles_per_session": 3,
+  "max_parallel_workers": 1,
+  "max_seconds_per_job": 300,
+  "max_compute_seconds_per_session": 1800,
+  "max_states_per_job": 2000000,
+  "max_period_enumeration": 1000000
+}

@@ -1,4 +1,27 @@
-# C021: complete quadratic Bose–Chowla reflections
+# Quadratic Bose–Chowla integer counts and reflected spans
+
+## Current external-review paper
+
+**[Read the paper (PDF)](manuscript/MANUSCRIPT.pdf)** ·
+[LaTeX source](manuscript/MANUSCRIPT.tex) ·
+[Markdown source](manuscript/proofs/quadratic_bose_chowla_integer_counts.md) ·
+[Build and reproduce](manuscript/README.md)
+
+The expanded paper proves a uniform integer representation estimate and
+deduces deletion stability and optimal reflected span over all integer
+heights, including overlapping reflections, for the stated complete
+quadratic Bose–Chowla family and its sublinear deletions.
+
+The [computational supplement](manuscript/notes/c021_editorial_20261105/COMPUTATIONAL_SUPPLEMENT.md)
+and [gap audit](manuscript/proofs/audit_20261105_integrated.md) are separate
+from the paper. **Review remains same-model/self-checking; independent
+expert or formal verification and literature priority are not established.
+No resolution of general Erdős #864 is claimed.**
+
+## Historical C021 note and original review packet
+
+The material below is preserved historical evidence. Its separated-reflection
+scope should not be confused with the expanded paper above.
 
 Research review draft and finite verification material related to Erdős problem #864.
 

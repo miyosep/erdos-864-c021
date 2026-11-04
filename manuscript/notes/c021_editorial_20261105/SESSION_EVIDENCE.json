@@ -1,0 +1,61 @@
+{
+  "session": "e864_20261105_07_editorial",
+  "date": "2026-11-04T18:54:40.619475+00:00",
+  "research_cycles": 1,
+  "new_claim_ids": [],
+  "mathematical_status_unchanged": true,
+  "novelty": "NOT_CHECKED",
+  "review_status": "SELF_CHECKED",
+  "manuscript": "proofs/quadratic_bose_chowla_integer_counts.md",
+  "manuscript_sha256": "7276b4e25372693ce6ced8c8fe0926f7e572aed61dedb4b77c1f2c88ffd092ef",
+  "preceding_manuscript_sha256": "42b8e174f5871930844a573518c463fc3c1356df43cb2db8c3a2229edf3e50ee",
+  "runs": [
+    {
+      "session": "e864_20261105_07_editorial",
+      "date": "2026-11-04T18:54:40.619475+00:00",
+      "run": "20261104T185004-55eae0993e3844abb0e74db4d7c3c560",
+      "reviewer": "Codex same-model source/editorial review",
+      "review_status": "SELF_CHECKED",
+      "outcome": "PASS_DOCUMENT_INTEGRITY_ONLY",
+      "states": 2813,
+      "periods": 0,
+      "workers": 1,
+      "truncated": false,
+      "elapsed_seconds": 0.12900640000589192,
+      "method": "Read revised theorem/proof mapping; verified exact 51 display-math expressions unchanged modulo whitespace and checked references/disclosures.",
+      "limitations": [
+        "Not independent expert/formal verification",
+        "No numerical mathematical suite rerun",
+        "External sandbox feedback tests not accessed or adopted",
+        "Original 1991 article full-text access remains unavailable"
+      ],
+      "displayed_math_unchanged": true
+    }
+  ],
+  "charged_elapsed_seconds": 0.12900640000589192,
+  "budget_unchanged": true,
+  "external_review_report": {
+    "provenance": "User pasted review text with external sandbox ZIP link",
+    "reported_modular_fibres": 1568,
+    "reported_integer_selectors": 520576,
+    "artifact_accessed": false,
+    "code_executed": false,
+    "adopted_as_verified_evidence": false
+  },
+  "validation": {
+    "workspace_check": {
+      "command": "python -B tools/check_workspace.py",
+      "errors": 0,
+      "warnings": 0,
+      "exit_code": 0
+    },
+    "unittests": {
+      "command": "python -B -m unittest discover -s tests -v",
+      "tests": 30,
+      "reported_elapsed_seconds": 9.861,
+      "result": "OK",
+      "exit_code": 0
+    }
+  },
+  "no_publication_or_external_contact": true
+}

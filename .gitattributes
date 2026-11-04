@@ -1,0 +1,4 @@
+# Preserve exported evidence bytes and SHA-256 checksums across platforms.
+* -text
+*.pdf binary
+*.zip binary

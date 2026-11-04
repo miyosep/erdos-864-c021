@@ -1,0 +1,49 @@
+{
+  "problem_id": "erdos_864",
+  "session_id": "e864_20261105_03_extensions",
+  "command": [
+    "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "experiments/check_c021_extensions.py",
+    "deletions"
+  ],
+  "working_directory": "<USER_HOME>\\Desktop\\math_research\\problems\\erdos_864",
+  "seed": null,
+  "budget": {
+    "max_cycles_per_session": 3,
+    "max_parallel_workers": 1,
+    "max_seconds_per_job": 300,
+    "max_compute_seconds_per_session": 1800,
+    "max_states_per_job": 2000000,
+    "max_period_enumeration": 1000000
+  },
+  "resource_limits": {
+    "max_cycles_per_session": 3,
+    "max_parallel_workers": 1,
+    "max_seconds_per_job": 300,
+    "max_compute_seconds_per_session": 1800,
+    "max_states_per_job": 2000000,
+    "max_period_enumeration": 1000000,
+    "requested_seconds": 300.0,
+    "effective_seconds": 300.0,
+    "session_compute_seconds_before": 4.638596799923107,
+    "time_accounting": "wall-clock seconds, including process setup and cleanup",
+    "runner_parallel_jobs_per_problem": 1,
+    "memory_enforced": false,
+    "disk_enforced": false,
+    "state_period_and_internal_worker_limits": "cooperative program enforcement only"
+  },
+  "input_files": [
+    "budget.json",
+    "proofs/investigation_20261105_extensions.md"
+  ],
+  "code_files": [
+    "experiments/check_c021_extensions.py",
+    "<USER_HOME>\\Desktop\\math_research\\problems\\erdos_864\\experiments\\check_c021_extensions.py"
+  ],
+  "software_versions": {
+    "runner_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "declared_command_software": {},
+    "command_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]"
+  }
+}

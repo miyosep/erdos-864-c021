@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "states": 202,
+  "periods": 0,
+  "workers": 1,
+  "truncated": false,
+  "pdf_pages": 11,
+  "rendered_pages": 11,
+  "displays_preserved": 51,
+  "tags_present": 28,
+  "missing_glyphs": false,
+  "overfull_boxes": [],
+  "checked_current_links": true,
+  "private_home_paths_absent": true,
+  "mathematical_verification": false,
+  "pdf_sha256": "0bb4b41e0549275ec44b440e869115772c8434db3b46c5a2a144cd80e3231a42"
+}

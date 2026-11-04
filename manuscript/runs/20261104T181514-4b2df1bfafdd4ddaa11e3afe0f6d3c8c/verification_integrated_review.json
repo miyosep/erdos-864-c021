@@ -1,0 +1,15 @@
+{
+  "run": "20261104T181514-4b2df1bfafdd4ddaa11e3afe0f6d3c8c",
+  "mode": "singular_uniform",
+  "elapsed_seconds": 0.5244331000139937,
+  "exit_code": 0,
+  "date": "2026-11-04T18:31:30.544970+00:00",
+  "review_status": "SELF_CHECKED",
+  "reviewer": "Codex same-model review; no independent/formal verification",
+  "limitations": "Finite scope or document integrity only; no asymptotic or external-theorem validation",
+  "states": 775680,
+  "periods": 4211,
+  "workers": 1,
+  "status": "PASS",
+  "truncated": false
+}
