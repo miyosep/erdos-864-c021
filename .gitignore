@@ -1,0 +1,6 @@
+/results/
+/paper/*.aux
+/paper/*.log
+/paper/*.out
+/paper/*.synctex.gz
+__pycache__/
