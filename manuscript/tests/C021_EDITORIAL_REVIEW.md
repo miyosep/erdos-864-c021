@@ -1,5 +1,11 @@
 # Validate the external-review revision
 
+Author revision, 2026-11-05: the current paper now lists Sage Kim,
+Peking University, and its AI-assistance paragraph was removed at the
+user's request. The current checker tests that presentation and the
+remaining supplement/scope text. For exact reproduction of the earlier
+editorial run below, use its saved code and input snapshots.
+
 The latest manuscript is proofs/quadratic_bose_chowla_integer_counts.md.
 The preceding manuscript/checker are preserved in
 notes/c021_editorial_20261105/. Mathematical results and all 51 displayed

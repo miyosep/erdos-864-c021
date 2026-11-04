@@ -56,7 +56,7 @@ for expression in blocks+inline:
 check(commands <= allowed, 'unreviewed TeX commands: '+repr(sorted(commands-allowed)))
 sections = ['## Introduction', '## 1. Definitions and main results', '## 2. Supporting lemmas',
             '## 3. Proof of Theorem 1 and Corollary 1.1', '## 4. Corollaries and finite limitations',
-            '## 5. Relation to prior results', '## 6. AI assistance and verification', '## References']
+            '## 5. Relation to prior results', '## 6. Computational supplement', '## References']
 positions = [text.index(s) for s in sections]
 check(positions == sorted(positions), 'requested section order')
 for n in range(1, 7):
@@ -66,8 +66,11 @@ for n in range(1, 4):
 check(not re.search(r'E864-C\d+|<!--|FOUNDATION_APPENDIX|LOCAL_LIMIT_APPENDIX', text),
       'standalone proof has workspace-only placeholder or claim label')
 check('make no claim of literature priority' in text.lower(), 'priority boundary')
-check('independent expert review or' in text and 'formal verification' in text,
-      'verification boundary')
+check('**Sage Kim**' in text and 'Peking University' in text, 'requested author and affiliation')
+check('AI assistance' not in text and 'AI assitance' not in text,
+      'requested assistance section removed')
+check('review limitations' in text and 'The proofs use no experimental premise.' in text,
+      'computational scope and supplement retained')
 check('SELF_CHECKED' not in text and '775680' not in text and '452448' not in text
       and '1568' not in text and '520576' not in text,
       'internal labels and unadopted feedback statistics excluded from paper')

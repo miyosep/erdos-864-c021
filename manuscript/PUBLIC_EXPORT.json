@@ -132,8 +132,8 @@
     },
     {
       "path": "proofs/quadratic_bose_chowla_integer_counts.md",
-      "original_sha256": "7276b4e25372693ce6ced8c8fe0926f7e572aed61dedb4b77c1f2c88ffd092ef",
-      "public_sha256": "7276b4e25372693ce6ced8c8fe0926f7e572aed61dedb4b77c1f2c88ffd092ef",
+      "original_sha256": "450ccfea0173e9f85230374e38b656b3d9795eef6d5b1627ac94d8bcf9bf336c",
+      "public_sha256": "450ccfea0173e9f85230374e38b656b3d9795eef6d5b1627ac94d8bcf9bf336c",
       "transformed": false
     },
     {
@@ -630,8 +630,8 @@
     },
     {
       "path": "tests/C021_EDITORIAL_REVIEW.md",
-      "original_sha256": "72a46ae536c3fd27bf9026b20672b7d5b812ffcc6ba02433c00e9c05583fda46",
-      "public_sha256": "72a46ae536c3fd27bf9026b20672b7d5b812ffcc6ba02433c00e9c05583fda46",
+      "original_sha256": "f2e8e7dd7c5ef469db590e39f0b6188e3c6de4a71154448b68992d159fa357c3",
+      "public_sha256": "f2e8e7dd7c5ef469db590e39f0b6188e3c6de4a71154448b68992d159fa357c3",
       "transformed": false
     },
     {
@@ -648,8 +648,8 @@
     },
     {
       "path": "verifiers/check_integrated_manuscript.py",
-      "original_sha256": "422adb584d9e576259601e74baadc8b85123c0a1914a5812100be74c57a052db",
-      "public_sha256": "422adb584d9e576259601e74baadc8b85123c0a1914a5812100be74c57a052db",
+      "original_sha256": "69385bd2476b2f8c129fc146147e069a0cf8b581c3135dec3167adc837388413",
+      "public_sha256": "69385bd2476b2f8c129fc146147e069a0cf8b581c3135dec3167adc837388413",
       "transformed": false
     },
     {

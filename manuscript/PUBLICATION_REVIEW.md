@@ -1,5 +1,13 @@
 # Typesetting and export review
 
+Author revision, 5 November 2026: at the user's request the paper now
+lists Sage Kim, Peking University, and its AI-assistance paragraph is
+removed. Section 6 retains only the computational-supplement pointer and
+scope limitations. Separate audit/evidence records are preserved.
+The PDF author metadata was checked, all 11 revised page renders were
+visually inspected, and all 51 displayed expressions and 28 equation
+tags remain unchanged. No new mathematical review status is asserted.
+
 5 November 2026. This is a publication-preparation check by the same AI
 model, not an additional independent mathematical review or research result.
 

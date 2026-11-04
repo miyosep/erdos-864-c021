@@ -10,8 +10,10 @@ Theorem 1 is the uniform integer representation estimate. Corollary 1.1
 deduces sublinear deletion stability and optimal span over every integer
 reflection height. The scope is the specified quadratic Bose--Chowla
 construction family. This is not a resolution of general Erdős #864.
-AI assistance, same-model review and the absence of established independent
-or formal verification are disclosed in the paper. No novelty is claimed.
+The paper lists Sage Kim, Peking University. Detailed review history,
+including same-model review and the absence of established independent
+or formal verification, remains in the separate supplement and audit.
+No novelty is claimed.
 
 ## Build the paper
 

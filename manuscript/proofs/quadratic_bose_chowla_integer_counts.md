@@ -2,6 +2,10 @@
 
 Draft for external mathematical review, 5 November 2026.
 
+**Sage Kim**
+
+Peking University
+
 ## Abstract
 
 We consider the complete quadratic Bose–Chowla sets with arbitrary
@@ -788,17 +792,11 @@ not be advertised as a new general character-sum theorem. Older
 original sources and broader arithmetic Fourier-transform treatments
 have not been exhaustively reviewed. There is no novelty claim here.
 
-## 6. AI assistance and verification
-
-AI assistance was used in developing the exposition, checking algebraic
-steps and preparing finite test code. The recorded mathematical checks
-include review by the same model and separately implemented finite
-consistency tests. They do not constitute independent expert review or
-formal verification; neither has been established for this draft.
-The proofs use no experimental premise.
+## 6. Computational supplement
 
 The [computational supplement](../notes/c021_editorial_20261105/COMPUTATIONAL_SUPPLEMENT.md)
 provides the precise finite scopes, code, receipts and review limitations.
+The proofs use no experimental premise.
 Computations do not establish the asymptotic theorem, an explicit prime
 threshold or novelty. Theorem 1 and Corollary 1.1 concern the specified
 quadratic construction family and its sublinear deletions; the general

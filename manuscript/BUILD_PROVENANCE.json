@@ -17,11 +17,11 @@
   ],
   "licensing": "Tectonic: MIT; Pandoc: GPL-2.0-or-later. Licenses inspected before local use; tool binaries are not redistributed.",
   "command": "tectonic --untrusted MANUSCRIPT.tex",
-  "changes": "Article typography, heading levels, TeX square proof-end markers, public supplement URL, font-file selection and bibliography line breaking; no displayed-math changes.",
+  "changes": "User-requested author Sage Kim, affiliation Peking University, and removal of the manuscript AI-assistance paragraph; separate review records retained. Article typography and bibliography formatting; no displayed-math changes.",
   "source": "proofs/quadratic_bose_chowla_integer_counts.md",
   "generated": {
-    "MANUSCRIPT.tex": "d2afc36a809ad694dc612220e51ef980ded3d262c93698d9c79d414dc0ba7929",
-    "MANUSCRIPT.pdf": "0bb4b41e0549275ec44b440e869115772c8434db3b46c5a2a144cd80e3231a42"
+    "MANUSCRIPT.tex": "b0e8b8663af5e9691d5c37af97c637a28aad63483a432659db0bb2539969866d",
+    "MANUSCRIPT.pdf": "17796ce15d04b7e5ff73358cc4dcd50790cb8492e467bd719e7c7a57253340b1"
   },
   "same_model_review_only": true,
   "mathematical_scope_unchanged": true

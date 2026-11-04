@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "states": 202,
+  "states": 204,
   "periods": 0,
   "workers": 1,
   "truncated": false,
@@ -13,5 +13,8 @@
   "checked_current_links": true,
   "private_home_paths_absent": true,
   "mathematical_verification": false,
-  "pdf_sha256": "0bb4b41e0549275ec44b440e869115772c8434db3b46c5a2a144cd80e3231a42"
+  "author": "Sage Kim",
+  "affiliation": "Peking University",
+  "assistance_section_removed": true,
+  "pdf_sha256": "17796ce15d04b7e5ff73358cc4dcd50790cb8492e467bd719e7c7a57253340b1"
 }
